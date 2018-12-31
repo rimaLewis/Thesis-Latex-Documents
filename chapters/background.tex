@@ -14,6 +14,26 @@
 
 % \gls{IDE}
  
+A software or a system with different configuration options is called configurable software system. A configuration option add a definite functionality to the system, it can be optional or mandatory. A configuration option can be selected or deselected. An example for Configuration option can be compression and encryption.
+when several configuration options are selected at the same time, they may interact with each other, when they do it is called an Interaction.
+Often times, a user or a developer is interested in knowing how the configuration options and/or interactions have an impact over the performance of the system. To know the performance influence we use a tool called 'SPL Conqueror'.
+SPL Conqueror takes as an input a Configurable software system, and produces a set of valid Performance-Influence models as an output.
+
+An example for Performance-Influence Model: 
+
+\begin{equation*}
+  \prod_{1} A{(c)}
+\end{equation*}
+
+Every performance-influence model consists of a set of terms. Each term has the participating configuration option/interactions and a co-efficient. This co-efficient indicates the performance that the configuration option/interaction contributes towards the total performance of the system.
+Performance here is calculated in terms of its execution time. A positive value indicates that the performance of the system decreases, whereas a negative term indicates that it increases the performance of the system.
+These Performance-Influence models can be visualized, which makes it easier to interpret them. Once we have the visualization we can identify the most relevant configuration option/interaction.
+A software may have an upgraded version, in this case we can compare the current and the upgraded versions of the software to identify the differences in the performance influence the configuration options/interactions may have.
+As and when the software is upgraded to add new configuration options, the size of the visualization increases to reflect the newly added configuration options. The visualization scales as the software keeps adding or removing configuration options.
+                                                                       
+
+ 
+ 
 \todots{
 
   - Explain what is 
@@ -23,6 +43,11 @@
 	                -> Interactions
 	                -> Positive and negative influences
 	            - Research Questions
+	            Research Questions :
+General : can we use the visualization techniques to visualize Performance-Influence models?
+ 1. Can we use the visualization techniques to identify relevant properties of one performance-influence models?
+ 2. Can we use the visualization techniques to compare two performance-influence models?
+ 3. How do visualization techniques scale?
 	            - Visualization techniques 
 	            - Things explained in the warm-up phase of the interview
 	            - No need to explain Feature Models
