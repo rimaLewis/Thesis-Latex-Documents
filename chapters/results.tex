@@ -11,3 +11,693 @@
 %wie lange für komplett unterschiedliche?
 
 
+
+\section{Evaluation}
+In this section we evaluate the correctness of all the questions asked in the interview questionnaire.
+There are two ways of doing it 
+  (i) By checking the answers to the questionnaire
+  (ii)By Time measurements
+  
+\section{By checking the answers to the questionnaire}
+ we check the answers given by the interviewees to the questions asked in the questionnaire. we evaluate how often a person gave correct answer to the question. we also evaluate how often a person gave wrong answer to the question. We evaluate these with respect to each question and with respect to each use case.
+ 
+One Performance-Influence Model.
+\newline
+Question : Which is the most relevant Configuration option/interaction?
+\newline
+\newline
+Use Case 1: Simple Performance-Influence Model.
+
+\begin{table}[htb]
+\centering
+\caption{Simple Performance-Influence Model}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+ Chart Types & Radar Plot (Q 1) & Text Plot (Q 2) & Ratio Plot (Q 3) \\ 
+ \hline
+ Interviewee 1 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 2 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 3 & \checkmark & \checkmark & \times \\
+  \hline
+ Interviewee 4 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 5 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 6 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 7 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 8 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 9 & \checkmark & \checkmark & \checkmark\\
+ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[htb]
+\centering
+\caption{Summary of above table}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+  Chart Types & Radar Plot (Q 1) & Text Plot (Q 2) & Ratio Plot (Q 3) \\ 
+ \hline
+ \% correct answer & 100\%  & 100\%  & 88.88\%\\
+  \hline
+ \% wrong answer & 0\% & 0\% & 11.12\%\\
+  \hline
+\end{tabular}
+\end{table}
+
+All the interviewees gave the correct answer to this question except one interviewee for the ratio plot.
+To summarize the table in 4.1, we can answer the questions how often a person gave a correct answer and how often a person gave wrong answer to the above question for the use case - Simple Performance-Influence Model.
+
+From the above table we can conclude that Radar or Text plot both the visualizations are equally suitable to answer this question.
+
+Use case 2 : Complex Performance-Influence Model.
+
+\begin{table}[htb]
+\centering
+\caption{Complex Performance-Influence Model}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+ Chart Types & Radar Plot (Q 4) & Text Plot (Q 5) & Ratio Plot (Q 6) \\ 
+ \hline
+ Interviewee 1 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 2 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 3 & \checkmark & \checkmark & \times \\
+  \hline
+ Interviewee 4 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 5 & \checkmark & \checkmark & \times\\
+  \hline
+ Interviewee 6 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 7 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 8 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 9 & \checkmark & \checkmark & \checkmark\\
+ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[htb]
+\centering
+\caption{Summary of above table}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+  Chart Types & Radar Plot (Q 4) & Text Plot (Q 5) & Ratio Plot (Q 6) \\ 
+ \hline
+ \% correct answer & 100\%  & 100\%  & 77.77\%\\
+  \hline
+ \% wrong answer & 0\% & 0\% & 22.23\%\\
+  \hline
+\end{tabular}
+\end{table}
+
+From the above tables we can conclude that to Radar Plot and Text Plot are equally suitable to answer the question asked when a complex performance-influence model is used.
+
+Simple and Complex Performance-Influence Models:
+
+\begin{table}[!htbp]
+\centering
+\caption{Summary of above table}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+  Chart Types & Radar Plot & Text Plot & Ratio Plot\\ 
+ \hline
+ \% correct answer & 100\%  & 100\%  & 83.83\%\\
+  \hline
+ \% wrong answer & 0\% & 0\% & 16.17\%\\
+  \hline
+\end{tabular}
+\end{table}
+
+From the above summary table we can conclude that for both the use cases; Simple and Complex, we can use Radar Plot or Text Plot to answer the question correctly. Ratio Plot can also be used, but it has an error rate of 16.17\%.
+
+
+
+Question : Which is the configuration option/interaction that leads to highest performance increase and decrease?
+\newline
+\newline
+Use Case 1: Simple Performance-Influence Model.
+
+\begin{table}[htb]
+\centering
+\caption{Simple Performance-Influence Model}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+ Chart Types & Radar Plot (Q 7) & Text Plot (Q 8) & Ratio Plot (Q 9) \\ 
+ \hline
+ Interviewee 1 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 2 & \times & \checkmark & \times\\
+  \hline
+ Interviewee 3 & \checkmark & \checkmark & \times \\
+  \hline
+ Interviewee 4 & \times & \checkmark & \checkmark\\
+  \hline
+ Interviewee 5 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 6 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 7 & \checkmark & \checkmark & \times \\
+  \hline
+ Interviewee 8 & \times & \checkmark & \checkmark\\
+  \hline
+ Interviewee 9 & \checkmark & \checkmark & \times\\
+ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[htb]
+\centering
+\caption{Summary of above table}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+  Chart Types & Radar Plot (Q 7) & Text Plot (Q 8) & Ratio Plot (Q 9) \\ 
+ \hline
+ \% correct answer & 70\%  & 100\%  & 60\%\\
+  \hline
+ \% wrong answer & 30\% & 0\% & 40\%\\
+  \hline
+\end{tabular}
+\end{table}
+
+From the above we can conclude that text plot is better than radar plot and ratio plot to answer this question when a simple performance-influence model is used.
+
+Use Case 2: Complex Performance-Influence Model.
+
+\begin{table}[htb]
+\centering
+\caption{Simple Performance-Influence Model}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+ Chart Types & Radar Plot (Q 10) & Text Plot (Q 11) \\ 
+ \hline
+ Interviewee 1 & \checkmark & \checkmark\\
+  \hline
+ Interviewee 2 & \checkmark & \checkmark\\
+  \hline
+ Interviewee 3 & \checkmark & \checkmark \\
+  \hline
+ Interviewee 4 & \checkmark & \checkmark\\
+  \hline
+ Interviewee 5 & \checkmark & \checkmark\\
+  \hline
+ Interviewee 6 & \checkmark & \checkmark\\
+  \hline
+ Interviewee 7 & \checkmark & \checkmark\\
+  \hline
+ Interviewee 8 & \checkmark & \checkmark\\
+  \hline
+ Interviewee 9 & \checkmark & \checkmark\\
+ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[!htbp]
+\centering
+\caption{Summary of above table}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+  Chart Types & Radar Plot (Q 10) & Text Plot (Q 11)\\ 
+ \hline
+ \% correct answer & 100\%  & 100\%\\
+  \hline
+ \% wrong answer & 0\% & 0\%\\
+  \hline
+\end{tabular}
+\end{table}
+
+We skipped the Visualization for ratio plot since it is impossible to answer this question with ratio plot.
+From the above table we can conclude that radar plot and text plot are equally suitable to answer this question for a complex performance-influence model.
+
+Simple and Complex Performance-Influence Models:
+
+\begin{table}[htbp]
+\centering
+\caption{Summary of above table}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+  Chart Types & Radar Plot & Text Plot & Ratio Plot \\ 
+ \hline
+ \% correct answer & 83.34\%  & 100\%  & 60\%\\
+  \hline
+ \% wrong answer & 16.67\% & 0\% & 40\%\\
+  \hline
+\end{tabular}
+\end{table}
+
+From the above summary table we can conclude that for both the use cases; Simple and Complex, text plot can be used to answer the question correctly. Radar Plot has an error rate of 16.67\%. This question is impossible to be answer with the help of ratio plot. Hence the preferred Visualization is Text plot over radar plot.
+
+Two Performance-Influence Models:
+\newline
+Question: Which is the configuration option/interaction where the performance-influence models differs the most?
+
+Use Case 1: Simple Performance-Influence Model.
+
+\begin{table}[htbp]
+\centering
+\caption{Simple Performance-Influence Model}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+ Chart Types & Radar Plot (Q 12) & Text Plot (Q 13) & Ratio Plot (Q 14) \\ 
+ \hline
+ Interviewee 1 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 2 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 3 & \checkmark & \checkmark & \checkmark \\
+  \hline
+ Interviewee 4 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 5 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 6 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 7 & \checkmark & \checkmark & \checkmark \\
+  \hline
+ Interviewee 8 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 9 & \checkmark & \checkmark & \checkmark\\
+ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Summary of above table}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+  Chart Types & Radar Plot (Q 12) & Text Plot (Q 13) & Ratio Plot (Q 14) \\ 
+ \hline
+ \% correct answer & 100\%  & 100\%  & 100\%\\
+  \hline
+ \% wrong answer & 0\% & 0\% & 0\%\\
+  \hline
+\end{tabular}
+\end{table}
+
+All of the interviewees gave correct answer to the question for all three visualizations. Hence any of the three visualizations can be used to answer this question when a simple performance-influence model is used.
+
+Use Case 2 : Complex Performance-Influence Model
+
+\begin{table}[htbp]
+\centering
+\caption{Complex Performance-Influence Model}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+ Chart Types & Radar Plot (Q 15) & Text Plot (Q 16) & Ratio Plot (Q 17) \\ 
+ \hline
+ Interviewee 1 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 2 & \times & \checkmark & \checkmark\\
+  \hline
+ Interviewee 3 & \times & \checkmark & \checkmark \\
+  \hline
+ Interviewee 4 & \times & \checkmark & \times\\
+  \hline
+ Interviewee 5 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 6 & \times & \checkmark & \checkmark\\
+  \hline
+ Interviewee 7 & \times & \checkmark & \checkmark \\
+  \hline
+ Interviewee 8 & \times & \checkmark & \times\\
+  \hline
+ Interviewee 9 & \times & \checkmark & \times\\
+ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Summary of above table}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+  Chart Types & Radar Plot (Q 15) & Text Plot (Q 16) & Ratio Plot (Q 17) \\ 
+ \hline
+ \% correct answer & 22.23\%  & 100\%  & 66.66\%\\
+  \hline
+ \% wrong answer & 77.78\% & 0\% & 33.34\%\\
+  \hline
+\end{tabular}
+\end{table}
+
+For the complex use case of the question, radar plot did not seem to be a good choice. Text plot is suitable for this question. Ratio plot also has some error rate.
+
+\begin{table}[!htbp]
+\centering
+\caption{Summary of Simple and Complex Performance-Influence Model}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+  Chart Types & Radar Plot & Text Plot & Ratio Plot \\ 
+ \hline
+ \% correct answer & 61.11\%  & 100\%  & 66.66\%\\
+  \hline
+ \% wrong answer & 38.89\% & 0\% & 33.34\%\\
+  \hline
+\end{tabular}
+\end{table}
+
+From the summary of both the use cases we can conclude that Text plot is more suitable with error rate of 0\% over radar plot and ratio plot.
+
+Question : Which is the configuration option/interaction where the performance-influence models are most similar?
+
+Use Case 1 : Simple Performance-Influence Model
+
+\begin{table}[!htbp]
+\centering
+\caption{Simple Performance-Influence Model}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+ Chart Types & Radar Plot (Q 18) & Text Plot (Q 19) & Ratio Plot (Q 20) \\ 
+ \hline
+ Interviewee 1 & \checkmark & \checkmark & \times\\
+  \hline
+ Interviewee 2 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 3 & \checkmark & \checkmark & \times \\
+  \hline
+ Interviewee 4 & \checkmark & \checkmark & \times\\
+  \hline
+ Interviewee 5 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 6 & \checkmark & \checkmark & \times\\
+  \hline
+ Interviewee 7 & \checkmark & \checkmark & \times \\
+  \hline
+ Interviewee 8 & \checkmark & \times & \times\\
+  \hline
+ Interviewee 9 & \checkmark & \checkmark & \times\\
+ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[!htbp]
+\centering
+\caption{Summary of above table}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+  Chart Types & Radar Plot (Q 18) & Text Plot (Q 19) & Ratio Plot (Q 20) \\ 
+ \hline
+ \% correct answer & 100\%  & 88.89\%  & 22.23\%\\
+  \hline
+ \% wrong answer & 0\% & 11.11\% & 77.77\%\\
+  \hline
+\end{tabular}
+\end{table}
+
+From the above table we can conclude that text plot is more suitable for this question than radar and ratio plot.
+
+Use Case 2 : Complex Performance-Influence Model.
+
+\begin{table}[!htbp]
+\centering
+\caption{Complex Performance-Influence Model}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+ Chart Types & Radar Plot (Q 21) & Text Plot (Q 22) & Ratio Plot (Q 23) \\ 
+ \hline
+ Interviewee 1 & \checkmark & \checkmark & \times\\
+  \hline
+ Interviewee 2 & \checkmark & \checkmark & \times\\
+  \hline
+ Interviewee 3 & \checkmark & \checkmark & \checkmark \\
+  \hline
+ Interviewee 4 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 5 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 6 & \checkmark & \checkmark & \times\\
+  \hline
+ Interviewee 7 & \checkmark & \checkmark & \checkmark \\
+  \hline
+ Interviewee 8 & \times & \times & \times\\
+  \hline
+ Interviewee 9 & \checkmark & \checkmark & \checkmark\\
+ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[!htbp]
+\centering
+\caption{Summary of above table}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+  Chart Types & Radar Plot (Q 21) & Text Plot (Q 22) & Ratio Plot (Q 23) \\ 
+ \hline
+ \% correct answer & 88.89\%   & 88.89\%  & 55.55\%\\
+  \hline
+ \% wrong answer & 11.11\% & 11.11\% & 44.45\%\\
+  \hline
+\end{tabular}
+\end{table}
+
+From the above table we can see that both radar plot and text plot are equally suitable to answer this question. Ratio plot has an error rate of 44.45\%.
+
+\begin{table}[!htbp]
+\centering
+\caption{Summary of Simple and Complex Performance-Influence Model}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+  Chart Types & Radar Plot & Text Plot & Ratio Plot \\ 
+ \hline
+ \% correct answer & 94.45\%  & 88.89\%  & 26.66\%\\
+  \hline
+ \% wrong answer & 5.55\% & 11.11\% & 73.34\%\\
+  \hline
+\end{tabular}
+\end{table}
+
+From the summary we can see that Radar Plot is a better choice to answer this question. Text plot is the second best option, whereas ratio plot has more probability that a user would not get a correct answer to the question.
+
+Many Performance-Influence Models
+
+Question : Which pair of performance-influence models share a large set of influences?
+
+\newline
+Use Case 1 : Simple Performance-Influence Model
+
+\begin{table}[!htbp]
+\centering
+\caption{Simple Performance-Influence Model}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+ Chart Types & Radar Plot (Q 24) & Text Plot (Q 25) & Ratio Plot (Q 26) \\ 
+ \hline
+ Interviewee 1 & \times & \checkmark & \checkmark\\
+  \hline
+ Interviewee 2 & \checkmark & \checkmark & \times\\
+  \hline
+ Interviewee 3 & \checkmark & \checkmark & \checkmark \\
+  \hline
+ Interviewee 4 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 5 & \checkmark & \checkmark & \times\\
+  \hline
+ Interviewee 6 & \checkmark & \checkmark & \times\\
+  \hline
+ Interviewee 7 & \checkmark & \checkmark & \times \\
+  \hline
+ Interviewee 8 & \checkmark & \times & \times\\
+  \hline
+ Interviewee 9 & \checkmark & \checkmark & \times\\
+ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{Summary of above table}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+  Chart Types & Radar Plot (Q 24) & Text Plot (Q 25) & Ratio Plot (Q 26) \\ 
+ \hline
+ \% correct answer & 88.89\%   & 88.89\%  & 33.34\%\\
+  \hline
+ \% wrong answer & 11.11\% & 11.11\% & 66.66\%\\
+  \hline
+\end{tabular}
+\end{table}
+
+From the above table we can conclude that radar plot and text plot are more suitable to answer the question than ratio plot.
+
+Use Case 2 : Complex Performance-Influence Model
+
+\begin{table}[!htbp]
+\centering
+\caption{Complex Performance-Influence Model}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+ Chart Types & Radar Plot (Q 27) & Text Plot (Q 28) & Ratio Plot (Q 29) \\ 
+ \hline
+ Interviewee 1 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 2 & \times & \checkmark & \times\\
+  \hline
+ Interviewee 3 & \checkmark & \checkmark & \checkmark \\
+  \hline
+ Interviewee 4 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 5 & \times & \checkmark & \checkmark\\
+  \hline
+ Interviewee 6 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 7 & \checkmark & \checkmark & \checkmark \\
+  \hline
+ Interviewee 8 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 9 & \times & \checkmark & \checkmark\\
+ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[!htbp]
+\centering
+\caption{Summary of above table}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+  Chart Types & Radar Plot (Q 27) & Text Plot (Q 28) & Ratio Plot (Q 29) \\ 
+ \hline
+ \% correct answer & 33.33\%   & 100\%  & 88.89\%\\
+  \hline
+ \% wrong answer & 66.66\% & 0\% & 11.11\%\\
+  \hline
+\end{tabular}
+\end{table}
+
+From the above table we can conclude that text plot is better choice to answer the question when a complex performance-influence model is used.
+
+\begin{table}[!htbp]
+\centering
+\caption{Summary of Simple and Complex Performance-Influence Model}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+  Chart Types & Radar Plot & Text Plot & Ratio Plot \\ 
+ \hline
+ \% correct answer & 77.77\%  & 94.44\%  & 61.11\%\\
+  \hline
+ \% wrong answer & 22.22\% & 5.55\% & 38.88\%\\
+  \hline
+\end{tabular}
+\end{table}
+
+From the above summary table we can conclude that Text plot is more suitable to answer this question, for both simple and complex performance-influence models. Radar plot can also be used, but it might answer the question in a wrong way.
+
+Question: Which pair of performance-influence models share a large set of influences?
+
+Use Case 1 : Simple Performance-Influence Model
+
+
+\begin{table}[!htbp]
+\centering
+\caption{Simple Performance-Influence Model}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+ Chart Types & Radar Plot (Q 30) & Text Plot (Q 31) & Ratio Plot (Q 32) \\ 
+ \hline
+ Interviewee 1 & \times & \times & \checkmark\\
+  \hline
+ Interviewee 2 & \checkmark & \times & \times\\
+  \hline
+ Interviewee 3 & \checkmark & \checkmark & \checkmark \\
+  \hline
+ Interviewee 4 & \times & \times & \checkmark\\
+  \hline
+ Interviewee 5 & \times & \times & \checkmark\\
+  \hline
+ Interviewee 6 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 7 & \times & \times & \checkmark \\
+  \hline
+ Interviewee 8 & \times & \times & \checkmark\\
+  \hline
+ Interviewee 9 & \times & \times & \checkmark\\
+ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[!htbp]
+\centering
+\caption{Summary of above table}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+  Chart Types & Radar Plot (Q 30) & Text Plot (Q 31) & Ratio Plot (Q 32) \\ 
+ \hline
+ \% correct answer & 33.33\%   & 22.22\%  & 88.88\%\\
+  \hline
+ \% wrong answer & 66.66\% & 77.77\% & 11.11\%\\
+  \hline
+\end{tabular}
+\end{table}
+
+From the above table we can see that radar plot and text plot has high error rate. whereas ratio plot helps to answer this question correctly in most of the cases, while it still has an error rate of 11.11\%.
+
+Use Case 2 : Complex Performance-Influence Model
+
+\begin{table}[!htbp]
+\centering
+\caption{Complex Performance-Influence Model}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+ Chart Types & Radar Plot (Q 33) & Text Plot (Q 34) & Ratio Plot (Q 35) \\ 
+ \hline
+ Interviewee 1 & \times & \checkmark & \checkmark\\
+  \hline
+ Interviewee 2 & \checkmark & \checkmark & \times\\
+  \hline
+ Interviewee 3 & \checkmark & \checkmark & \checkmark \\
+  \hline
+ Interviewee 4 & \times & \times & \checkmark\\
+  \hline
+ Interviewee 5 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 6 & \checkmark & \checkmark & \checkmark\\
+  \hline
+ Interviewee 7 & \times & \checkmark & \checkmark \\
+  \hline
+ Interviewee 8 & \times & \times & \checkmark\\
+  \hline
+ Interviewee 9 & \times & \checkmark & \times\\
+ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[!htbp]
+\centering
+\caption{Summary of above table}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+  Chart Types & Radar Plot (Q 33) & Text Plot (Q 34) & Ratio Plot (Q 35) \\ 
+ \hline
+ \% correct answer & 55.55\%   & 77.77\%  & 77.77\%\\
+  \hline
+ \% wrong answer & 44.44\% & 22.22\% & 22.22\%\\
+  \hline
+\end{tabular}
+\end{table}
+
+From the summary table we can see that all the visualization have an error rate, ratio plot being the more suitable one.
+
+
+\begin{table}[!htbp]
+\centering
+\caption{Summary of Simple and Complex Performance-Influence Model}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+  Chart Types & Radar Plot & Text Plot & Ratio Plot \\ 
+ \hline
+ \% correct answer & 61.11\%  & 50\%  & 83.33\%\\
+  \hline
+ \% wrong answer & 38.88\% & 50\% & 16.66\%\\
+  \hline
+\end{tabular}
+\end{table}
+
+From the summary of both simple and complex use cases, we can conclude that ratio plot will be more suitable to answer this question than the other two visualizations since it has a lower error rate.
