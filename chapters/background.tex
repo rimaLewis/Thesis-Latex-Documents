@@ -14,25 +14,36 @@
 
 % \gls{IDE}
  
-A software or a system with different configuration options is called configurable software system. A configuration option adds a definite functionality to the system, it can be optional or mandatory. A configuration option can be selected or deselected. An example for Configuration option can be compression and encryption.
-when several configuration options are selected at the same time, they may interact with each other, when they do it is called an Interaction.
-\break
-\newline
-Often times an user or a developer is interested in knowing how the configuration options and/or interactions have an impact over the performance of the system. To know the performance influence we use a tool called 'SPL Conqueror'.
-SPL Conqueror takes as an input a Configurable software system, and produces a set of valid Performance-Influence models as an output.
+In this chapter we will introduce the general terms used throughout the thesis so that the reader will understand the thesis in better way. In section 2.1 we introduce the term 'configurable software system' and terms related to it with an example of performance-influence model and how it is derived. In section 2.2 we will introduce the term 'Performance' and how it is used in this thesis.
 
-\textbf{An example for Performance-Influence Model: }
+\section{Configurable Software System}
+A software or a system with different configuration options is called configurable software system. A configuration option adds a definite functionality to the system, it can be optional or mandatory. An example of a functionality can be compression of files, encryption of files etc corresponding to configuration option 'Compression' and 'Encryption' respectively.A configuration option can be selected or deselected. when the configuration option is selected, it may have an impact on the performance of the system. Performance in this thesis is considered as execution time.
+when several configuration options are selected at the same time, they may interact with each other, when they do it is called an Interaction.
+
+
+Oftenly a user or a developer is interested in knowing how the configuration options and/or interactions have an impact over the non-functional properties like performance or energy consumption of the system. To know the performance influence we use a tool called '\textit{SPL Conqueror}'.
+SPL Conqueror takes as an input a Configurable software system, and produces a set of valid performance-Influence models as an output.An example where a user might be interested in the performance of the system are to produce High-performance computer architecture or to produce High-performance graphics.
+
+\textbf{An example for Performance-Influence Model:}
 
 \begin{equation*}
   \pi {(c)} = \overbrace{\underbrace {3}_{Coeff.} \cdot  \underbrace{{c(A)}}_{Option}}^{Term 1}  + \overbrace{ \underbrace{5}_{Coeff.} \cdot \underbrace{{c(B)}}_{Option}}^{Term 2} + \overbrace{\underbrace{0}_{Coeff.} \cdot \underbrace{{c(C)}}_{Option}}^{Term 3} - \overbrace{\underbrace{4}_{Coeff.} \cdot \underbrace{{ c(A)} \cdot {c(B)}}_{Interaction}}^{Term 4}
+  \tag{2.1}\label{eq:2.1}
 \end{equation*}
 
 
+Every performance-influence model consists of a set of terms. Each term has the participating configuration option/interactions and a coefficient.This coefficient indicates the performance that the configuration option/interaction contributes towards the total performance of the system.
 
-Every performance-influence model consists of a set of terms. Each term has the participating configuration option/interactions and a co-efficient. This co-efficient indicates the performance that the configuration option/interaction contributes towards the total performance of the system.
-Performance here is calculated in terms of its execution time. A positive value indicates that the performance of the system decreases, whereas a negative term indicates that it increases the performance of the system. In the above given example there are four terms, the first term has the participating configuration option 'A', and it contributes 3 units towards the total performance of the system, Term 2 has the participating option 'B' and it contributes 5 units towards the total performance of the system, similarly term 3 contributes 0 units, which says that it does not have an influence towards the performance of the system when configuration option 'C' is selected. The fourth term has two configuration option 'A' and 'B', which when selected together interact with each other, hence it is called an Interaction, and it contributes 4 units towards the total performance of the system. The negative sign before the co-efficient indicates that it has increases the performance of the system. while the first 3 terms decreases the performance of the system.
-\newline
-These Performance-Influence models can be visualized, which makes it easier to interpret them. Once we have the visualization we can identify the most relevant configuration option/interaction.
+Let us see how a performance-influence model is derived.Lets say we have set of all configuration options as '$\mathcal{O}$' and '\textit{C}' as set of all configurations, here we assume that all the configuration options are optional, none of them are mandatory. Hence $\mathcal{O}$ = \textbraceleft 'A', 'B', 'C' \textbraceright. Any configuration \textit{c} belongs to \textit{C} which is a mapping of $\mathcal{O}$ over real numbers, \textit{c}: $\mathcal{O}$ $\rightarrow$ $\mathbb{R}$. If the configuration option A is selected, c(A) = 1, else c(A) = 0. c(A) is then denoted along with the performance that configuration option 'A' provides, and this together forms a term. As indicated in Term1. A performance-influence model is sum of all such terms which forms a valid performance-influence model.
+
+\section{Performance}
+Performance can be defined in different way depending on the area of application.A positive value indicates that the performance of the system decreases, whereas a negative term indicates that it increases the performance of the system. In the above given example there are four terms, the first term has the participating configuration option 'A', and it contributes 3 units towards the total performance of the system, Term2 has the participating option 'B' and it contributes 5 units towards the total performance of the system, similarly term3 contributes 0 units, which says that it does not have an influence towards the performance of the system when configuration option 'C' is selected. The fourth term has two configuration option 'A' and 'B', which when selected together interact with each other, hence it is called an Interaction, and it contributes 4 units towards the total performance of the system. The negative sign before the coefficient indicates that it increases the performance of the system. while the first 3 terms decreases the performance of the system.
+
+In this thesis we use performance as a non-functional property that we compute of a configurable software system. But it is not confined to computing performance,it can be energy computation as well.
+
+Performance has a different way of being calculated depending on its area its application.
+
+These performance-influence models can be visualized, which makes it easier to interpret them. Once we have the visualization we can identify the most relevant configuration option/interaction.
 A software may have an upgraded version, in this case we can compare the current and the upgraded versions of the software to identify the differences in the performance influence the configuration options/interactions may have.
 As and when the software is upgraded to add new configuration options, the size of the visualization increases to reflect the newly added configuration options. The visualization scales as the software keeps adding or removing configuration options.
                                                                        
