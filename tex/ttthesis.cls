@@ -130,7 +130,7 @@
 \usepackage[nonumberlist,acronym,toc]{glossaries} % list of acronyms
   \renewcommand*{\glspostdescription}{} % remove the dot in the list of acronyms
   \setlength{\glsdescwidth}{0.8\textwidth} % for longer acronym descriptions
-  \glossarystyle{super}
+  \setglossarystyle{super}
 
 %% Headings %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

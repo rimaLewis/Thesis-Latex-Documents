@@ -1,16 +1,89 @@
 \usepackage{booktabs}
 \newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
+\usepackage{pdfpages}
+\usepackage{graphicx}
 \usepackage{booktabs}
+\raggedbottom
+
+\usepackage{breqn}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage[bookmarksnumbered=true]{hyperref}
+\hypersetup{
+     colorlinks = true,
+     linkcolor = blue,
+     anchorcolor = blue,
+     citecolor = blue,
+     filecolor = blue,
+     urlcolor = blue
+     }
+\usepackage{pgfplotstable}
+
+\usepackage{pgfplots}
+    \pgfplotscreateplotcyclelist{my colors}{
+        % color for the legend
+        black!50\\
+        % color for the "real" plots
+        green\\
+        orange\\
+        blue\\
+        red\\
+        black\\
+        cyan\\
+    }
+    \pgfplotsset{
+        compat=1.3,
+        cycle list name=my colors,
+        legend cell align=left,
+    }
+\usepackage{caption}
+\usepgfplotslibrary{statistics}
 \usepackage{multirow}
+\usepackage{float}
 \usepackage{amssymb}
 \usepackage{adjustbox}
+\usepackage{mdframed}
 \usepackage{lipsum}% example text
 \usepackage{array,booktabs}
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\mdfsetup{
+    linewidth=0.6pt
+}
+\makeatletter
+\DeclareMathOperator*{\sometext}{text} % "
+\newenvironment{myindentpar}[1]%
+  {\begin{list}{}%
+          {\setlength{\leftmargin}{#1}}%
+          \item[]%
+  }
+  {\end{list}}
+\usepackage{enumitem}
+\usetikzlibrary{matrix}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=newest}
+
+\usetikzlibrary{matrix}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=newest}
+
+\newcommand\varpm{\mathbin{\vcenter{\hbox{%
+  \oalign{\hfil$\scriptstyle+$\hfil\cr
+          \noalign{\kern-.3ex}
+          $\scriptscriptstyle{-}$\cr}%
+}}}}
+
+% we use \prefix@<level> only if it is defined
+\renewcommand{\@seccntformat}[1]{%
+  \ifcsname prefix@#1\endcsname
+    \csname prefix@#1\endcsname
+  \else
+    \csname the#1\endcsname\quad
+  \fi}
+% define \prefix@section
+\newcommand\prefix@section{Section \thesection: }
+\makeatother
 
 \newlength{\ridiculouslylargecmidrulesep}
 \setlength{\ridiculouslylargecmidrulesep}{50pt}
-\usepackage[margin=1in]{geometry} % set margins to meet your document's needs
 \usepackage{pgfplots}
 \usepackage{tikz}
 	\usetikzlibrary{arrows,positioning,backgrounds,fit,trees} 
