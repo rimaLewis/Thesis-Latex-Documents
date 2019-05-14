@@ -1,24 +1,24 @@
 \chapter{Methodology}
 \label{methodology}
 
-In this chapter, we present the research questions and the methods to validate the research questions. In \hyperref[sec:3.1]{Section 3.1}, we introduce the research questions and the motivation behind them. In \hyperref[sec:3.2]{Section 3.2}, we introduce the design, interview procedure, and the interview structure.  Also, how the interview can be used to evaluate the research questions. In the interview, we present different visualization techniques and therefore, assess the quality of these visualization techniques for different use cases by conducting an interview. We also present the dependent and independent variables that affect the interview.
+In this chapter, we present the research questions and the methods to evaluate the research questions. In \hyperref[sec:3.1]{Section 3.1}, we introduce the research questions and the motivation behind them. In \hyperref[sec:3.2]{Section 3.2}, we introduce the design, interview procedure, and the interview structure.  Also, how the interview can be used to evaluate the research questions. In the interview, we present different visualization techniques and therefore, assess the quality of these visualization techniques for different use cases by conducting an interview. We also present the dependent and independent variables that affect the interview.
 
 \section{Research Questions}
 \label{sec:3.1}
-To assess the quality of the visualizations with respect to different use cases, we formulate different research questions. Research questions are selected based on the number of performance-influence models they involve. For this thesis we have selected 4 research questions each considering use cases one performance-influence model, two performance-influence models and the final two belonging to multiple performance-influence models. 
+To assess the quality of the visualizations with respect to different use cases, we formulate different research questions. Research questions are selected based on the number of performance-influence models they involve. For this thesis, we have selected 4 research questions each considering use cases one performance-influence model, two performance-influence models and the final two belonging to multiple performance-influence models. 
 
 \subsection{One performance-influence model}
 
-Research questions considering one-performance model are selected to evaluate the visualizations, when a user is interested in knowing only the influence of the configuration options and interactions among them of one non-functional property of the software.
+Research questions considering one performance-influence model are selected to evaluate the visualizations when a user is interested in knowing only the influence of the configuration options and interactions among them of one non-functional property of the software.
 The information is useful for selecting or deselecting configuration options to optimize the behavior of the system with respect to the non-functional property. 
 
 \begin{mdframed}
 \textbf{RQ1: Can we use the visualization techniques to identify relevant configuration options or interactions of one performance-influence model?}
 \end{mdframed}
 
-When our focus is on one performance-influence model, our area of interest is on the terms that cause highest performance increase or decrease. This indicates that the corresponding configuration option or interaction is making an influence on the performance that is higher compared to other configuration options or interactions.
+When our focus is on one performance-influence model, our area of interest is on the terms that cause the highest performance increase or decrease. This indicates that the corresponding configuration option or interaction is making an influence on the performance that is higher compared to other configuration options or interactions.
 
-If a term has the highest positive influence on the configurable software system, it indicates that the corresponding configuration option increases the performance of the system much more than other configuration options or interactions. Similarly, if a term has highest negative influence, it indicates that the corresponding configuration option decreases the performance of the system much more than other configuration options or interactions.
+If a term has the highest positive influence on the configurable software system, it indicates that the corresponding configuration option increases the performance of the system much more than other configuration options or interactions. Similarly, if a term has the highest negative influence, it indicates that the corresponding configuration option decreases the performance of the system much more than other configuration options or interactions.
 
 Since performance-influence models have different levels of complexities, we further investigate these levels of complexities as an additional factor. Therefore, we have sub-questions with simple and complex complexity.
 
@@ -26,7 +26,7 @@ Since performance-influence models have different levels of complexities, we fur
 \textbf{RQ1.1: Can we use the visualization techniques to identify relevant relevant configuration options or interactions of one simple performance-influence model?}
 \end{mdframed}
 
-For this sub-question, we consider the use case of simple performance-influence models. Simple performance-influence do not contain interactions among configuration options. This makes it easier to identify the configuration option that causes the most relevant influence on the performance of the entire system.
+For this sub-question, we consider the use case of simple performance-influence models. Simple performance-influence model does not contain interactions among configuration options. This makes it easier to identify the configuration option that causes the most relevant influence on the performance of the entire system.
 
 \begin{mdframed}
 \textbf{RQ1.2: Can we use the visualization techniques to identify relevant configuration options or interactions of one complex performance-influence model?}
@@ -36,9 +36,9 @@ For complex performance-influence models, we consider interactions along with co
 
 \subsection{Two performance-influence models}
 
-Research questions based on two performance-influence models are selected to evaluate the visualizations, when a user wants to compare the models. For instance, comparison of two revisions or comparison of two NFPs of a software.
+Research questions based on two performance-influence models are selected to evaluate the visualizations when a user wants to compare the models. For instance, a comparison of two revisions or a comparison of two different NFPs of software.
 
-When we consider two performance-influence models, we usually want to compare performances between them. Comparison for instance, is done over two revisions of the software system. Many times, a revision of a software needs to be compared to its earlier or next revision to check how the two revisions differ in terms of its performance. Our area of interest here is to find out the similarities or differences in the two revisions.
+When we consider two performance-influence models, we usually want to compare performances between them. Comparison for instance, is done over two revisions of the software system. Many times, a revision of a software needs to be compared to its earlier or next revision to determine how the two revisions differ in terms of its performance. Our area of interest here is to find out the similarities or differences in the two revisions.
 
 \begin{mdframed}
 \textbf{RQ2: Can we use the visualization techniques to compare two performance-influence models?}
@@ -62,13 +62,13 @@ For the complex use case, we consider interactions among the configuration optio
 
 Finally, research questions based on more than two performance-influence models are selected to evaluate visualizations, when a user is interested in comparing several revisions of a configurable software system or comparing multiple different NFPs.
 
-With a new revision, configurable software system adds new configuration options, performance-influence models scale to reflect the influence of newly added configuration options on the performance of the system. Scaling can be be of two types; addition of new configuration options, addition of new performance-influence models.   
+With a new revision, configurable software system adds new configuration options, performance-influence models scale to reflect the influence of newly added configuration options on the performance of the system. Scaling can be of two types; addition of new configuration options, addition of new performance-influence models.   
 
 \begin{mdframed}
 \textbf{RQ3: How good can the visualizations be used to compare a high number of performance-influence models and a high number of terms?}
 \end{mdframed}
 
-When we have many performance-influence models, our area of interest is in finding a pair or more of performance-influence models which share a large set of influences. This visualization also helps to notice outliers among performance-influence models.
+When we have many performance-influence models, our area of interest is in finding a pair or more of performance-influence models that share a large set of influences. This visualization also helps to notice outliers among performance-influence models.
 
 \begin{mdframed} 
 \textbf{RQ3.1: How good can the visualizations be used to compare a high number of simple performance-influence models and a high number of terms?}
@@ -86,33 +86,33 @@ For the complex use case, we considered that at more than a pair of performance-
 \textbf{RQ4: What are the differences with respect to visualization techniques regarding many performance-influence models?}
 \end{mdframed}
 
-With this research question, we evaluate how robust the visualization techniques are and how do the visualizations scale with respect to addition of configuration options or addition of performance-influence models? We evaluate, if the visualizations of many performance-influence models can be inferred with the same ease as that of visualizations with less performance-influence models.
+With this research question, we evaluate how robust the visualization techniques are and how do the visualizations scale with respect to the addition of configuration options or addition of performance-influence models? We evaluate if the visualizations of many performance-influence models can be inferred with the same ease as that of visualizations with fewer performance-influence models.
 
 \begin{mdframed}
-\textbf{RQ4.1: What are the differences with respect to visualization techniques regarding many performance-influence models having number of terms?}
+\textbf{RQ4.1: What are the differences with respect to visualization techniques regarding many performance-influence models having a number of terms?}
 \end{mdframed}
 
-This sub-question evaluates the scalability of performance-influence models with respect to addition of configuration options or interactions.
+This sub-question evaluates the scalability of performance-influence models with respect to the addition of configuration options or interactions.
 
 \begin{mdframed}
-\textbf{RQ4.2: What are the differences with respect to visualization techniques regarding many performance-influence models having number of models?}
+\textbf{RQ4.2: What are the differences with respect to visualization techniques regarding many performance-influence models having a number of models?}
 \end{mdframed}
 
-This sub-question, evaluates the scalability of performance-influence models with respect to addition of performance-influence models.
+This sub-question evaluates the scalability of performance-influence models with respect to the addition of performance-influence models.
 
 \section{Design and Interview}
 \label{sec:3.2}
-\subsection{How do we plan on getting the answers to the research questions?}
+\subsection{Realization}
 
-As a method to acquire the answer to the research questions, we conducted an interview with several participants \cite{dillman2014internet}. We only considered participants that had  prior knowledge either in performance-influence models or configurable software systems. We had 9 participants answering the interview with the help of the performance-influence model tool. 
-5 participants belong to Faculty of Computer Science and Mathematics, Passau, while 4 belonged to Bauhaus-University of Weimar. The invites were sent by using a mail address from the university of Passau.
+In this section, we discuss on how we plan on getting the answers to the research questions and as a method to acquire the answer to the research questions, we conduct an interview with several participants~\cite{dillman2014internet}. We only considered participants that had prior knowledge either in performance-influence models or configurable software systems. We had 9 participants answering the interview with the help of the performance-influence model tool. 
+5 participants belong to the Faculty of Computer Science and Mathematics, Passau, while 4 belonged to Bauhaus-University of Weimar. The invites were sent by using a mail address from the University of Passau.
 
-We interviewed the participants to answer a questionnaire with several questions based on the visualization of performance-influence models. The questionnaire is attached in the 
-\hyperref[appendix:questionnaire]{Appendix:A.2}. The interview consisted of an initial warm-up phase, where the interviewee is given a brief explanation of performance-influence models, configurable software systems, configuration options, interactions, and the visualization techniques. Warm-up phase is conducted so that we reduce bias between the interviewees who have not seen the plots before from those who have. During this phase, the interviewee also got to answer a question using different visualization techniques as a try-out question.
+We interviewed the participants to answer a questionnaire with several questions based on visualization of performance-influence models. The questionnaire is attached in the 
+\hyperref[appendix:questionnaire]{Appendix:A.3}. The interview consisted of an initial warm-up phase, where the interviewee is given a brief explanation of performance-influence models, configurable software systems, configuration options, interactions, and the visualization techniques. The warm-up phase is conducted so that we reduce bias between the interviewees who have not seen the visualizations before from those who have. During this phase, the interviewee also got to answer a question using different visualization techniques as a try-out question.
 
-The questions are categorized based on the number of performance-influence models considered in the questions. There are three sections; one performance-influence model, two performance-influence models and many performance-influence models. Each section has several questions, each question includes a different performance-influence model for each of the visualization technique; radar plot, text plot and ratio plot. Questions considering each section are used to evaluate research questions which correspond to the same section. For instance, questions (Q1, Q2...) considering one performance-influence models are used to evaluate the research questions (RQ1, RQ1.2...) considering one performance-influence model.
+The questions are categorized based on the number of performance-influence models considered in the questions. There are three sections; one performance-influence model, two performance-influence models, and many performance-influence models. Each section has several questions, each question includes a different performance-influence model for each of the visualization techniques; the radar plot, the text plot and the ratio plot. Questions considering each section are used to evaluate research questions that correspond to the same section. For instance, questions (Q1, Q2...) considering one performance-influence models are used to evaluate the research questions (RQ1, RQ1.2...) considering one performance-influence model.
 
-Every question has a difficulty rating indicating how easy or difficult it is for a user to derive the answer the question. The difficulty rating is done using Likert scales, they are used as sanity check measure to quickly evaluate whether a claim or the result of a calculation can possibly be true.
+Every question has a difficulty rating indicating how easy or difficult it is for a user to derive the answer to the question. The difficulty rating is done using Likert scales, they are used as sanity check measure to quickly evaluate whether a claim or the result of a calculation can possibly be true.
 
 If the questions have a definite answer, an area to fill in the answer is provided. Also, each question has a comment or feedback section to fill in, in the case when the user has possible ideas for improvement of the visualizations or the tool.
 
@@ -129,9 +129,9 @@ To evaluate these research questions, we selected the following questions in our
 
 \textbf{Q1: Which is the most relevant configuration option or interaction?}
 
-When we have visualization with only one performance-influence model, our interest is on the configuration options or interactions that stands out or the ones that make highest influence on performance. 
+When we have visualization with only one performance-influence model, our interest is on the configuration options or interactions that stand out or the ones that make the highest influence on performance. 
 
-\textbf{Q2: Which is the configuration option or interaction that leads to highest performance increase or decrease?}
+\textbf{Q2: Which is the configuration option or interaction that leads to the highest performance increase or decrease?}
 
 A user would like to know which of the configuration options or interactions increases or decreases the performance the most. The user then has the choice to either deselect or select the corresponding configuration options or interactions to improve the performance of the system.
 \end{myindentpar}
@@ -145,13 +145,13 @@ A user would like to know which of the configuration options or interactions inc
 
 To evaluate these research questions, we selected the following questions in our questionnaire.
 
-\textbf{Q3: Which is the configuration option or interaction where the performance-influence models differs the most?}
+\textbf{Q3: Which is the configuration option or interaction where the performance-influence models differ the most?}
 
-When two performance-influence models are concerned, we compare two different revisions of the software. A user is interested if the current revision of the software has a configuration options or interactions that performs very differently than its previous revision. He can infer, if that configuration options or interactions caused a performance spike or improved the performance of the software.
+When two performance-influence models are concerned, we compare two different revisions of the software. A user is interested if the current revision of the software that has configuration options or interactions that performs very differently than its previous revision. He can infer if that configuration options or interactions caused a performance spike or improved the performance of the software.
 
 \textbf{Q4: Which is the configuration option or interaction where the performance-influence models are the most similar?}
 
-A user is also interested, if the current revision of the software has a configuration options or interactions that performs similar to its previous revision. He can infer, if that configuration options or interactions is stable or the new revision of software did not affect the performance of this configuration options or interactions.
+A user is also interested if the current revision of the software has configuration options or interactions that performs similar to its previous revision. He can infer if that configuration options or interactions is stable or the new revision of software did not affect the performance of these configuration options or interactions.
 \end{myindentpar}
 
 \textbf{RQ3: How good can the visualizations be used to compare a high number of performance-influence models and a high number of terms?}
@@ -174,11 +174,11 @@ Question 5 corresponds to scalability with respect to terms and question 6 corre
 \textbf{RQ4: What are the differences with respect to visualization techniques regarding many performance-influence models?}
 
 \begin{myindentpar}{0.5cm}
-\textbf{RQ4.1}: What are the differences with respect to visualization techniques regarding many performance-influence models having number of terms?
+\textbf{RQ4.1}: What are the differences with respect to visualization techniques regarding many performance-influence models having a number of terms?
 
-\textbf{RQ4.2}: What are the differences with respect to visualization techniques regarding many performance-influence models having number of models?
+\textbf{RQ4.2}: What are the differences with respect to visualization techniques regarding many performance-influence models having a number of models?
 
-To evaluate these research questions, we rely on correctness and time taken of question 5 and question 6. We present the results using box plot with co-ordinates; time vs simple and complex use-case for each of the visualization technique. We also use Mann-Whitney U test for this research question.
+To evaluate these research questions, we rely on correctness and time taken for question 5 and question 6. We present the results using box plot with co-ordinates; time vs simple and complex use-case for each of the visualization technique. We also use Mann-Whitney U test for this research question.
 \end{myindentpar}
 
 \subsection{Independent Variables}
@@ -188,27 +188,27 @@ An independent variable is a variable that is manipulated, to test its effects o
 Every question in the questionnaire is divided into two sections, namely 'Simple' and 'Complex'. With this variable, we aim at considering how good the visualizations scale and how the perception or time taken by the interviewee to answer the question changes with respect to the complexity of the model.
 
 \subsubsection*{Visualization Techniques}
-We have 3 visualization techniques; radar plot, text plot and ratio plot. Every question was presented with each of the visualization techniques. With this variable, we aim to find which visualization technique is best to answer a given question. This variable has a direct impact on the difficulty rating.
+We have 3 visualization techniques; the radar plot, the text plot and the ratio plot. Every question was presented with each of the visualization techniques. With this variable, we aim to find which visualization technique is best to answer a given question. This variable has a direct impact on the difficulty rating.
 
 \subsection{Dependent Variables}
-Also, there were variable that were used as a factor to measure the outcome of the interview, namely
+Also, these are variables that are used as a factor to measure the outcome of the interview, namely
 
 \subsubsection*{Correctness}
-This dependent variable refers to correctness of the answer. Correctness is measured in percent and indicates the relative number of participants that could answer the question correctly. 
+This dependent variable refers to the correctness of the answer. Correctness is measured in percent and indicates the relative number of participants that could answer the question correctly. 
 
 \subsubsection*{Time}
 When a participant was answering questions from the questionnaire, a timer was started at the start of each question and ended as soon as the participant had filled in his response to the question. This was done to track the time required by each question.
 This helped us to support the analysis of how suitable some visualization techniques are to answer certain questions.
 
 \begin{myindentpar}{0.5cm}
-  \textbf{Mann-Whitney U Test:} This test helps us to determine, if one visualization technique is significantly better than other visualization techniques when time is considered as a factor \cite{DBLP:conf/eusflat/GrzegorzewskiS17}.
-\end{myindentpar}
+  \textbf{Mann-Whitney U Test:} This test helps us to determine if one visualization technique is significantly better than other visualization techniques when time is considered as a factor~\cite{DBLP:conf/eusflat/GrzegorzewskiS17}.
+\end{myindentpar}   
 
 \subsubsection*{Difficulty rating}
 Difficulty rating in our thesis is assessed using \texttt{Likert scales}. This scale helps us determine the difficulty perception of the interviewee based on the visualization technique and the complexity of the performance-influence model.
 
 \begin{myindentpar}{0.5cm}
-  \textbf{Pearson's Co-relation Test:} This test helps us to determine if the time measurements of each question are linearly or non-linearly co-related to the corresponding difficulty ratings. This test is conducted for each question, for different complexities.
+  \textbf{Pearson Correlation Coefficient:} This coefficient helps us to determine if the time measurements of each question are linearly or non-linearly co-related to the corresponding difficulty ratings. This coefficient is computed for each question, for different complexities.
 \end{myindentpar}
 
 

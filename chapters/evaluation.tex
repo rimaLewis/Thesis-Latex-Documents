@@ -1,18 +1,18 @@
 \chapter{Evaluation}
 \label{evaluation}
 
-In this chapter, we present and discuss the results of the interview. We evaluate the research questions from the results obtained from the interview. Factors like correctness,time measurements and difficulty ratings help us with the evaluation process. Correctness is presented in \hyperref[sec:4.1]{Section 4.1} and time measurements is presented in \hyperref[sec:4.2]{Section 4.2}. We also present the results of difficult rating in \hyperref[sec:4.3]{Section 4.3}. We then discuss our findings from the results in \hyperref[sec:4.4]{Section 4.4}. We also present certain factors in \hyperref[sec:4.5]{Section 4.5}, that might have influenced our interview unfavourably. Finally, in in \hyperref[sec:4.6]{Section 4.6}, we present feedback given by the interviewees on how the visualization of performance-influence model tool can be improved. 
+In this chapter, we present and discuss the results of the interview. We evaluate the research questions from the results obtained from the interview. We assess the results by using the correctness of the answers, the time needed and the difficulty rating giving by the interviewees. Correctness is presented in \hyperref[sec:4.1]{Section 4.1} and time measurements is presented in \hyperref[sec:4.2]{Section 4.2}. We also present the results of difficulty rating in \hyperref[sec:4.3]{Section 4.3}. We answer our research question from the presented results in \hyperref[sec:4.4]{Section 4.4}. In \hyperref[sec:4.5]{Section 4.5}, we discuss our findings with respect to the results. We also present certain factors in \hyperref[sec:4.6]{Section 4.6}, that might have influenced our interview unfavorably. Finally, in \hyperref[sec:4.7]{Section 4.7}, we present feedback given by the interviewees on how the visualization of performance-influence model tool can be improved. 
 
 \section{Correctness}
 \label{sec:4.1}
-We check the answers given by the interviewees to the questions asked in the questionnaire. We evaluate how often an interviewee answered the question correctly. Evaluation is done with respect to each question and each use case; simple and complex. \hyperref[table:correctness]{Table 4.1} presents the relative number of correct answers given for each use  case with its summary per question. 
+We check the answers given by the interviewees to the questions asked in the questionnaire. We evaluate how often an interviewee answered the question correctly. The evaluation is done with respect to each question and each use case; simple and complex. \hyperref[table:correctness]{Table 4.1} presents the relative number of correct answers given for each use case with its summary per question. 
  
 \begin{table}[!htbp]
 \centering
 \small
 \begin{tabular}{lccccccc}
 \toprule   
- Input & Use case & Radar Chart  & Text Plot  & Ratio Plot \\ 
+ Input & Use Case & Radar Plot  & Text Plot  & Ratio Plot \\ 
 \midrule
 & Simple & 100\% &  100\% & 88.8\%\\ 
 Q1  & Complex &  100\% &  100\% &  77.7\%\\ 
@@ -89,22 +89,23 @@ Q6 Simple \& Complex & 0.455 & 0.369 & 0.665 & 0.556 & 0.642 & 0.346\\
 \caption[Mann-Whitney U Test]{Mann-Whitney U test results for the different visualization techniques across the different questions and complexities.} 
 \end{table}
 
-Time is measured on how long an interviewee took to answer a question. This is done to compare if an interviewee took longer time to answer a complex use case than a simpler one or to check if one of the visualization techniques was time consuming than the others.
+Time is measured on how long an interviewee took to answer a question. This is done to compare if an interviewee took a long time to answer a complex use case than a simpler one or to check if one of the visualization techniques was more time consuming than others.
 
 We will conduct the \textit{Mann–Whitney U test} in this section.
 
 \subsection{Mann–Whitney U test}
-Mann–Whitney U test helps us to determine, if one sample is significantly better than another sample when time is considered as a factor. We say that the sample is significantly better than another if the p value of the test is less than 0.05. \hyperref[table:time]{Table 4.2}, presents the results for Mann–Whitney U test. The significant values are marked in bold.
+We use the Mann-Whitney U test to determine if one sample is significantly better than another sample when time is considered as a factor. A sample is significantly better than another if the p value of the test is less than 0.05. \hyperref[table:time]{Table 4.2}, presents the results for Mann–Whitney U test. The significant values are marked in bold.
 
-In our case, we determine if one group of time measurement is significantly better than another group of time measurement. We compare time measurement groups between radar plot, text plot and ratio plot. 
+In our case, we determine if one group of time measurement is significantly better than another group of time measurement. We compare time measurement groups between the radar plot, the text plot, and the ratio plot. 
 
-Here we try to find, if a visualization technique consumed significantly less time than other visualization techniques to answer a question. For instance, radar plot $<$ text plot, implies if radar plot is better than text plot, if the Mann–Whitney U test value is less 0.05. Similarly, radar plot $>$ text plot, implies if radar plot is worse than text plot. 
+Here we try to find, if a visualization technique consumed significantly less time than other visualization techniques. For instance, radar plot $<$ text plot implies if the radar plot is better than the text plot if the Mann–Whitney U test value is less 0.05. Similarly, radar plot $>$ text plot implies if the radar plot is worse than the text plot. 
 
 \section{Difficulty Rating}
 \label{sec:4.3}
 
-We also consider difficulty rating as a factor for the evaluation of research questions. Interviewee selects the difficulty rating on how easy or difficult it was to answer a question. This rating corresponds to the time taken by the interviewee to answer the question. \hyperref[table:rating]{Table 4.3}, presents the average difficulty ratings.
+The difficulty rating in our thesis is assessed using Likert scales. This scale helps us determine the difficulty perception of the interviewee based on the visualization technique and the complexity of the performance-influence model.
 
+The difficulty rating is considered as a factor for the evaluation of research questions. The interviewee selects the difficulty rating on how easy or difficult it was to answer a question. This rating corresponds to the time taken by the interviewee to answer the question. \hyperref[table:rating]{Table 4.3}, we present the average difficulty ratings and their standard deviation.
 
 \begin{table}[!htbp]
 \centering
@@ -115,7 +116,7 @@ We also consider difficulty rating as a factor for the evaluation of research qu
  \cmidrule{2-3} 
  \cmidrule{4-5} 
   \cmidrule{6-7} 
-Input  & Mean & & Mean & & Mean \\
+Input  &  Mean $\varpm$ SD & & Mean $\varpm$ SD & & Mean $\varpm$ SD \\
 \midrule
 Q1 Simple  & $1.3\varpm 0.471$ &  & $1.5\varpm 0.496$ &  &   $1.2\varpm 0.415$& \\ 
 Q1 Complex & $2.4\varpm 0.831$ &  & $2.2\varpm 0.628$ &  &   $1.3\varpm 0.471$& \\ 
@@ -139,13 +140,15 @@ Q6 Simple \& Complex  & $2.5\varpm 0.598$ &  & $2.7\varpm 0.853$ &  &   $3.9\var
 \bottomrule
 \end{tabular}
 \label{table:rating}
-\caption[Difficulty Rating]{Average difficulty rating for the different visualization techniques across the different questions and complexities.} 
+\caption[Average difficulty Rating]{Average difficulty rating and their standard deviations for all interviewees. The mean and standard deviations are computed for each different visualization techniques across the different questions and complexities.} 
 \end{table}
 
-\subsection{Pearson's correlation Test}
-We conduct Pearson's correlation test with difficulty ratings and time measurements as input. This test helps to determine the measure of linear correlation between the 2 inputs. The inputs we use for this test are the time measurements and difficulty ratings for different visualization techniques and different questions along with their complexities. \hyperref[table:pearons]{Table 4.4}, presents the linear correlation values for the same.
+\subsection{Pearson Correlation Coefficient}
+We compute the Pearson correlation coefficient~\cite{pearson1896vii} with difficulty ratings and time measurements as input. This coefficient is used to determine the measure of linear correlation between the 2 inputs. \hyperref[table:pearons]{Table 4.4}, presents the linear correlation values for the same.
 
-The p values range from -1 to +1. A values less than 0.5 implies weak correlation, value between 0.5 - 0.8 implies medium correlation and value greater than 0.8 implies strong correlation. A positive p value implies that both inputs increase or decrease linearly and a negative p value implies that both increase or decrease inversely.
+The coefficient ranges from -1 to +1. A value of less than 0.5 implies a weak correlation, a value between 0.5 - 0.8 implies medium correlation and value greater than 0.8 implies a strong correlation. A positive coefficient implies that both inputs increase or decrease linearly and a negative coefficient implies that both increase or decrease inversely.
+
+From \hyperref[table:pearons]{Table 4.4}, we can see that the only strong correlation coefficient is between the time measurements and difficulty ratings of Q3 for a simple use case with the radar plot as the visualization technique.
 
 \begin{table}[!htbp]
 \centering
@@ -155,10 +158,10 @@ The p values range from -1 to +1. A values less than 0.5 implies weak correlatio
  \cmidrule{2-3} 
  \cmidrule{4-5} 
   \cmidrule{6-7} 
-Input  & p value &  & p value &  & p value \\
+Input  & Coefficient &  & Coefficient &  & Coefficient \\
 \midrule
 Q1 Simple  & -0.013 &  & 0.216 &  & 0.711 & \\ 
-Q1 Complex & 0.637 &  & 0.403 &  & -0-218 & \\ 
+Q1 Complex & 0.637 &  & 0.403 &  & -0.218 & \\ 
 Q2 Simple  & 0.384 &  & -0.280 &  & -0.019 & \\ 
 Q2 Complex & 0.753 &  & 0.576 &  & \textbf{--} & \\ 
 Q3 Simple  & 0.877 &  & 0.566 &  & 0.506 & \\ 
@@ -172,17 +175,17 @@ Q6 Complex & 0.293 &  & 0.178  &  & 0.487 &\\
 \bottomrule
 \end{tabular}
 \label{table:pearons}
-\caption[Difficulty Rating]{Pearson's Test for the different visualization techniques across the different questions and complexities.} 
+\caption[Pearson correlation coefficient]{Pearson correlation coefficient for the different visualization techniques across the different questions and complexities.} 
 \end{table}
 
-Time measurements and difficulty ratings are also plotted for each interviewee, for each question. This is done so as to look at the correlation between them graphically. These plots are presented in \hyperref[sanityCheck]{Appendix:A.1}
+Time measurements and difficulty ratings are also plotted for each interviewee, for each question. This is done so as to look at the correlation between them graphically. These plots are presented in \hyperref[sanityCheck]{Appendix:A.2}
 
 \section{Results}
 \label{sec:4.4}
 
 We now answer the research questions by using the results from the correctness values, the time measurements, and the difficulty ratings.
 
-We also use pareto-front plots for each research question. So far we have seen the two evaluation factors; correctness and time separately. Using pareto-front plots, we combine these two factors. These plots are plotted with time vs correctness. They help us to determine which visualization technique is the best when considering both these evaluation factors. A visualization is considered best when it takes lowest amount of time to answer a question with highest relative number of correct values.
+We also use Pareto front plots for each research question. So far we have considered the two evaluation factors; correctness and time separately. Using Pareto front plots, we combine these two factors. These plots are plotted with time vs correctness. They help us to determine which visualization technique is the best when considering both these evaluation factors. Visualization is considered the best when it takes the lowest amount of time to answer a question with the the highest relative number of correct values.
 
 \subsection*{One Performance-Influence Model}
 \vskip 0.2in
@@ -192,25 +195,25 @@ We also use pareto-front plots for each research question. So far we have seen t
 
 We consider Q1 and Q2 for this research question.
 
-\begin{description}[leftmargin=0pt]
-\item[Correctness: ]From \hyperref[table:correctness]{Table 4.1}, we can see that all the interviewees were able to answer both Q1 and Q2 correctly when presented with radar plot and text plot, regardless of the use case. With ratio plot there are chances that a user might not get the intended answer. We can infer, that the relative number of in correct answers given to ratio plot is not high, but we might not always get the correct answer. 
-  
-\item[Time Measurements: ]From the results presented in \hyperref[table:time]{Table 4.2} for Q1 and Q2, we see that there is no significant time differences between the visualization techniques for Q1 for both the use cases. However, for Q2, we see that for the simple use case text plot performed significantly better than other visualization techniques.
-  
-\item[Difficulty Ratings: ]From the difficulty ratings presented in \hyperref[table:rating]{Table 4.3}, we can note that the average difficulty ratings for Q1 and Q2 are below 2.4 with an exception of ratio plot for Q2, for the simple use case. Where it has an average rating of 4.2, but also with a higher standard deviation.
-
-\end{description}
-
-Hence, the answer to this research question would be \textbf{yes}, with text plot being the considerable choice of visualization, since it has best results when considering both time and correctness factors.
-
 \vskip 0.2in
 \begin{mdframed}
 \textbf{RQ1.1: Can we use the visualization techniques to identify relevant configuration options or interactions  of one simple performance-influence model?}
 \end{mdframed}
 
-\textbf{Q1}: From \hyperref[figure:paretoOneQ1]{Figure 4.1}, for the simple use case text plot is much better than other visualization techniques. We can also notice that ratio plot takes slightly less time, but does not guarantee perfect correctness results.
+For this sub-question, we only consider the simple use case for Q1 and Q2.
 
-\textbf{Q2}: From \hyperref[figure:paretoOneQ2]{Figure 4.2}, for the simple use case text plot is much better both in terms of time and correctness. 
+\begin{description}[leftmargin=0pt]
+\item[Correctness: ]From \hyperref[table:correctness]{Table 4.1}, we can infer that all the interviewees were able to answer Q1 and Q2 correctly when presented with the text plot as the visualization technique. Whereas, the ratio plot did not perform as good as the text plot for both Q1 and Q2.
+
+\item[Time Measurements: ]From the results presented in \hyperref[table:time]{Table 4.2}, we can see that only for Q2, the text plot proved to be significantly better than other visualization techniques.
+
+\item[Difficulty Ratings: ]From the difficulty ratings presented in \hyperref[table:rating]{Table 4.3}, we can note that the average difficulty ratings for Q1 and Q2 are below 2.4 with an exception of the ratio plot for Q2. Where it has an average rating of 4.2, but also with a higher standard deviation.
+
+\end{description}
+
+\textbf{Q1}: From \hyperref[figure:paretoOneQ1]{Figure 4.1}, for the simple use case the text plot is much better than other visualization techniques. We can also notice that the ratio plot takes slightly less time, but does not guarantee perfect correctness results.
+
+\textbf{Q2}: From \hyperref[figure:paretoOneQ2]{Figure 4.2}, for the simple use case, the text plot is much better both in terms of time and correctness. 
 
 \begin{figure}[hbt!]
 \centering
@@ -287,7 +290,7 @@ x          y         label
     \end{axis}
 \end{tikzpicture}
 \label{figure:paretoOneQ1}
-\caption[Pareto-front for Q1]{The correctness and time values for Q1 (simple and complex). The pareto front for the different complexities is drawn by using a green and orange line respectively. The visualizations on the pareto front for Q1 - Simple is text and ratio plot and for Q1 - Complex is the text plot.} 
+\caption[Pareto front for Q1]{The correctness and time values for Q1 (simple and complex). The Pareto front for the different complexities is drawn by using a green and orange line respectively. The visualizations on the Pareto front for Q1 - Simple is text and the ratio plot and for Q1 - Complex is the text plot.} 
 \end{figure}
 
 \begin{figure}[hbt!]
@@ -356,7 +359,7 @@ x         y         label
     \end{axis}
 \end{tikzpicture}
 \label{figure:paretoOneQ2}
-\caption[Pareto-front for Q2]{The correctness and time values for Q2 (simple and complex). The pareto front for the different complexities is drawn by using a blue and red line respectively. The visualizations on the pareto front for Q2 - Simple is text plot and for Q2 - Complex is the text plot.} 
+\caption[Pareto front for Q2]{The correctness and time values for Q2 (simple and complex). The Pareto front for the different complexities is drawn by using a blue and red line respectively. The visualizations on the Pareto front for Q2 - Simple is the text plot and for Q2 - Complex is the text plot.} 
 \end{figure}
 
 \vskip 0.2in
@@ -364,13 +367,22 @@ x         y         label
 \textbf{RQ1.2: Can we use the visualization techniques to identify relevant configuration options or interactions  of one complex performance-influence model?}
 \end{mdframed}
 
-\textbf{Q1}: From \hyperref[figure:paretoOneQ1]{Figure 4.1}, we can notice that for the complex use case, both radar plot and text plot perform equally better in terms of correctness, however text plot performed slightly better in terms of time. Whereas, ratio plot did not perform as good as text and radar plot.
+For this sub-question, we only consider the complex use case for Q1 and Q2.
 
-\textbf{Q2}: From \hyperref[figure:paretoOneQ2]{Figure 4.2}, for the complex use case, text plot is slightly better than radar plot both in terms of time and correctness. Ratio plot was not considered for this question, since ratio plot displays the general influence of a configuration option or interaction, also that the ratio plot does not display configuration options with zero or no influence.
+\begin{description}[leftmargin=0pt]
+\item[Correctness: ] From \hyperref[table:correctness]{Table 4.1}, we can infer that all the interviewees were able to answer the Q1 and Q2 correctly for both the radar plot and the text plot. 
 
-In the complex use case too text plot is better, for the same reasons as mentioned in the previous research question.
+\item[Time Measurements: ] From the results presented in \hyperref[table:time]{Table 4.2}, we can see infer that none of the visualization technique proved to be significantly better than the other visualization techniques. 
 
-Hence, to answer all the above research questions, we can say that \textbf{yes}, we can use visualization techniques to identify relevant properties of one performance-influence model.
+\item[Difficulty Ratings: ] From the difficulty ratings presented in \hyperref[table:rating]{Table 4.3}, we can infer that all of the 3 visualization techniques had an average difficulty rating below 2.4
+\end{description}
+
+\textbf{Q1}: From \hyperref[figure:paretoOneQ1]{Figure 4.1}, we can notice that for the complex use case, both the radar plot and the text plot perform equally better in terms of correctness. However, the text plot performed slightly better in terms of time. Whereas, the ratio plot did not perform as good as text and the radar plot.
+
+\textbf{Q2}: From \hyperref[figure:paretoOneQ2]{Figure 4.2}, for the complex use case, the text plot is slightly better than the radar plot both in terms of time and correctness. The ratio plot was not considered for this question, since the ratio plot displays the general influence of a configuration option or interaction, also that the ratio plot does not display configuration options with zero or no influence.
+
+
+Hence, the answer to this research question is \textbf{yes}, with the text plot being the considerable choice of visualization, since it has the best results when considering time, correctness, and difficulty rating factors.
 
 \subsection*{Two Performance-Influence Models}
 \vskip 0.2in
@@ -380,30 +392,28 @@ Hence, to answer all the above research questions, we can say that \textbf{yes},
 
 We consider Q3 and Q4 for this research question.
 
-\begin{description}[leftmargin=0pt]
-\item[Correctness: ]From \hyperref[table:correctness]{Table 4.1}, we can see that all the interviewees were able to answer Q3 correctly for all the visualization techniques, for the simple use case. However, for the complex use case, only text plot performed well. For Q4, radar plot performed comparatively better than other visualization techniques for both the use case.
-
-\item[Time Measurements: ]From the results presented in \hyperref[table:time]{Table 4.2}, we see that for both Q3 and Q4, text plot is significantly better than other visualization techniques regardless of the use case of the questions. It implies that text plot took significantly less time to answer the questions.
-
-\item[Difficulty Ratings: ] From \hyperref[table:rating]{Table 4.3}, for Q3 and Q4 and for both the use case, we notice that ratio plot stands out as it has consistently higher difficulty ratings than radar and text plot. 
-\end{description}
-
-Hence, the answer to this research question would be \textbf{yes}, with text plot being the considerable choice of visualization technique, since it has best results when considering both time and correctness factors.
-
-The reason being that two performance-influence models are easier and faster to compare when they are visualized side-by-side as in text plot. When they are visualized in ratio plot, the same configuration option or interaction are not plotted side-by-side, their order differ based on their general performance. Hence, comparison on text plot is easier than on ratio plot. 
-
-Radar plot does moderately good at comparison, since data is plotted in a circle than in a textual order.
-
 \vskip 0.2in
 \begin{mdframed}
 \textbf{RQ2.1: Can we use the visualization to compare two simple performance-influence models?}
 \end{mdframed}
 
-\textbf{Q3:} From \hyperref[figure:paretoTwoQ3]{Figure 4.3}, for the simple use case, we can infer that both text plot and radar plot are equally better, when both factors; correctness and time are considered. We also see that both these visualization techniques produce perfect correctness results.
+For this sub-question, we consider only the simple use case for Q3 and Q4.
 
-\textbf{Q4:} From \hyperref[figure:paretoTwoQ4]{Figure 4.4}, for the simple use case, radar plot is better in terms of correctness measurements. But, from \hyperref[table:time]{Table 4.2}, we know text plot does significantly better than other visualization techniques. This implies that even though interviewees took less time to answer text plot, the results were not 100\% correct.
+\begin{description}[leftmargin=0pt]
+\item[Correctness: ] From \hyperref[table:correctness]{Table 4.1}, we can infer that for Q3 all the interviewees answered correctly when presented with any of the 3 visualization techniques, whereas for Q4 only the radar plot performed better than the text plot and the ratio plot.
 
-We can also see both the ratio plots marking are at the very top, indicating that they take highest time to answer the question, which did not always lead to correct answers.
+\item[Time Measurements: ] From the results presented in \hyperref[table:time]{Table 4.2}, we can see that the text plot performed significantly better in terms of time measurements.
+
+\item[Difficulty Ratings: ] From the difficulty ratings presented in \hyperref[table:rating]{Table 4.3}, we can see that the ratio plot has on an average higher difficulty rating than the text plot and the radar plot.
+
+\end{description}
+
+
+\textbf{Q3:} From \hyperref[figure:paretoTwoQ3]{Figure 4.3}, for the simple use case, we can infer that both the text plot and the radar plot are equally better when both factors; correctness and time are considered. We also see that both these visualization techniques produce perfect correctness results.
+
+\textbf{Q4:} From \hyperref[figure:paretoTwoQ4]{Figure 4.4}, for the simple use case, the radar plot is better in terms of correctness measurements. But, from \hyperref[table:time]{Table 4.2}, we know the text plot does significantly better than other visualization techniques. This implies that even though interviewees took less time to answer the text plot, the results were not 100\% correct.
+
+We can also see both the ratio plots marking are at the very top, indicating that they take the the highest time to answer the question, which did not always lead to correct answers.
 
 \begin{figure}[hbt!]
 \centering
@@ -474,7 +484,7 @@ x         y            label
     \end{axis}
 \end{tikzpicture}
 \label{figure:paretoTwoQ3}
-\caption[Pareto-front for Q3]{The correctness and time values for Q3 (simple and complex). The pareto front for the different complexities is drawn  by using a green and orange line respectively. The visualizations on the pareto front for Q3 - Simple is radar and text plot and for Q3 - Complex is the text plot.} 
+\caption[Pareto front for Q3]{The correctness and time values for Q3 (simple and complex). The Pareto front for the different complexities is drawn  by using a green and orange line respectively. The visualizations on the Pareto front for Q3 - Simple is the radar and the text plot and for Q3 - Complex is the text plot.} 
 \end{figure}
 
 \begin{figure}[hbt!]
@@ -546,7 +556,7 @@ x         y            label
     \end{axis}
 \end{tikzpicture}
 \label{figure:paretoTwoQ4}
-\caption[Pareto-front for Q4]{The correctness and time values for Q4 (simple and complex). The pareto front for the different complexities is drawn by using a blue and red line respectively. The visualizations on the pareto front for Q4 - Simple is radar plot and for Q4 - Complex is the text plot.}
+\caption[Pareto front for Q4]{The correctness and time values for Q4 (simple and complex). The Pareto front for the different complexities is drawn by using a blue and red line respectively. The visualizations on the Pareto front for Q4 - Simple is the radar plot and for Q4 - Complex is the text plot.}
 \end{figure}
 
 \vskip 0.2in
@@ -554,13 +564,22 @@ x         y            label
 \textbf{RQ2.2: Can we use the visualization to compare two complex performance-influence models?}
 \end{mdframed}
 
-\textbf{Q3:} From \hyperref[figure:paretoTwoQ3]{Figure 4.3}, for the complex use case, we can infer that both text plot outperformed other visualization techniques, when both factors; correctness and time are considered.
+For this sub-question, we consider only the complex use case for Q3 and Q4.
 
-\textbf{Q4:} From \hyperref[figure:paretoTwoQ4]{Figure 4.4}, for the complex use case, we can infer that text plot is slightly better than radar plot both in terms of time and correctness factors, even though it did not lead to perfect correctness results.
+\begin{description}[leftmargin=0pt]
+\item[Correctness: ] From \hyperref[table:correctness]{Table 4.1}, we can infer that for Q3, all the interviewees answered correctly when presented with the text plot. Whereas, for Q4 none of the visualization techniques gave perfect correctness answers.
 
-Text plot is better since comparison of performances in a textual way, is much easier and faster than on radar and ratio plots.
+\item[Time Measurements: ] From the results presented in \hyperref[table:time]{Table 4.2}, we can see that the text plot performed significantly better in terms of time measurements.
 
-Hence, the answer to all the above research questions would be \textbf{yes}, we can compare two performance-influence models with text plot being the choice of visualization.
+\item[Difficulty Ratings: ] From the difficulty ratings presented in \hyperref[table:rating]{Table 4.3}, we can see that the ratio plot has on an average higher difficulty rating than the text plot and the radar plot.
+
+\end{description}
+
+\textbf{Q3:} From \hyperref[figure:paretoTwoQ3]{Figure 4.3}, for the complex use case, we can infer that both the text plot outperformed other visualization techniques when both factors; correctness and time are considered.
+
+\textbf{Q4:} From \hyperref[figure:paretoTwoQ4]{Figure 4.4}, for the complex use case, we can infer that the text plot is slightly better than the radar plot both in terms of time and correctness factors, even though it did not lead to perfect correctness results.
+
+Hence, the answer to this research question is \textbf{yes}, with the text plot being the considerable choice of visualization technique, since it has the best results when considering time, correctness, and difficulty ratings.
 
 \subsection*{Many Performance-Influence Models}
 
@@ -571,31 +590,26 @@ Hence, the answer to all the above research questions would be \textbf{yes}, we 
 
 We consider Q5 and Q6 for this research question.
 
-Q5 corresponds to scalability with respect to addition of performance-influence models and Q6 corresponds to scalability with respect to addition of configuration option or interactions.
-
-\begin{description}[leftmargin=0pt]
-\item[Correctness: ]From \hyperref[table:correctness]{Table 4.1}, we can see for Q5, we see that text plot is better and for Q6 ratio plot is better to answer this question.
-
-\item[Time Measurements: ]From the results presented in \hyperref[table:time]{Table 4.2} for Q5 and Q6, we see that for both the question there is no significant time differences between the visualization techniques, but from Q5 simple, we can infer that interviewees took significantly longer time to answer question based on radar plot than on text plot.
-
-\item[Difficulty Ratings: ]The difficulty ratings for Q5 and Q6 in \hyperref[table:rating]{Table 4.3}, ratio plot has higher difficulty ratings that other radar and text plot. We have already seen that ratio plot has relative number of correct answers for Q6. This implies that even though ratio plot has a higher difficulty rating, it helps the users get the intended answer.
-\end{description}
-
-Therefore, the answer to this research question would be \textbf{yes}, with text plot being the considerable choice of visualization technique, when scalability with respect to performance-influence models is considered, since it has best results when considering both time and correctness factors.
-
-And when scalability with respect to configuration options is considered, ratio plot is the best visualization technique in general.
-
-We already know than for comparing several performance-influence models, text plot is best choice of visualization, since data is easier and also faster to perceive when displayed in a textual way.
-
-For comparing many configuration options among several performance-influence model, ratio plot proved to be better than text and radar plot. The reason can be that when many terms are introduced, the visualization for radar and text can get quite complex and hard to read and compare. Whereas, for ratio plot the bars are spread out, helping the user to do comparisons. The comparisons using ratio plot can be time consuming, but they lead to highest correct answers than the other two visualizations.
+Q5 corresponds to scalability with respect to the addition of performance-influence models and Q6 corresponds to scalability with respect to the addition of configuration option or interactions.
 
 \begin{mdframed} 
 \textbf{RQ3.1: How good can the visualizations be used to compare a high number of simple performance-influence models and a high number of terms?}
 \end{mdframed}
 
-\textbf{Q5:} From \hyperref[figure:paretoManyQ5]{Figure 4.5}, for the simple use case, we can see that text plot is better choice of visualization technique when considering both time and correctness factors.
+For this sub-question, we only consider the simple use case for Q5 and Q6.
 
-\textbf{Q6:} From \hyperref[figure:paretoManyQ6]{Figure 4.6}, for the simple use case, we can infer that if time is considered as a factor, radar plot performs comparatively better than other visualization techniques. However, when correctness is considered as a factor, ratio plot performs better. Even though both these plots do not lead to perfect correctness results.
+\begin{description}[leftmargin=0pt]
+\item[Correctness: ] From \hyperref[table:correctness]{Table 4.1}, we can infer that for both Q5 and Q6, none of the visualization techniques lead to perfect correctness answer. Although, the text plot performed comparatively better for Q5 and the ratio plot performed comparatively better for Q6.
+
+\item[Time Measurements: ] From the results presented in \hyperref[table:time]{Table 4.2}, none of the visualization techniques performed significantly better in terms of time measurements.
+
+\item[Difficulty Ratings: ] From the difficulty ratings presented in \hyperref[table:rating]{Table 4.3}, we can infer that the ratio plot has higher difficulty ratings for Q5 and Q6.
+
+\end{description}
+
+\textbf{Q5:} From \hyperref[figure:paretoManyQ5]{Figure 4.5}, for the simple use case, we can see that the text plot is a better choice of visualization technique when considering both time and correctness factors.
+
+\textbf{Q6:} From \hyperref[figure:paretoManyQ6]{Figure 4.6}, for the simple use case, we can infer that if time is considered as a factor, the radar plot performs comparatively better than other visualization techniques. However, when correctness is considered as a factor, the ratio plot performs better. Even though both these plots do not lead to perfect correctness results.
 
 \begin{figure}[hbt!]
 \centering
@@ -664,7 +678,7 @@ x         y            label
     \end{axis}
 \end{tikzpicture}
 \label{figure:paretoManyQ5}
-\caption[Pareto-front for Q5]{The correctness and time values for Q5 (simple and complex). The pareto front for the different complexities is drawn by using a green and orange line respectively. The visualizations on the pareto front for Q5 - Simple is text plot and for Q5 - Complex is the text plot.} 
+\caption[Pareto front for Q5]{The correctness and time values for Q5 (simple and complex). The pareto front for the different complexities is drawn by using a green and orange line respectively. The visualizations on the pareto front for Q5 - Simple is the text plot and for Q5 - Complex is the text plot.} 
 \end{figure}
 
 \begin{figure}[hbt!]
@@ -741,16 +755,32 @@ x          y         label
     \end{axis}
 \end{tikzpicture}
 \label{figure:paretoManyQ6}
-\caption[Pareto-front for Q6]{The correctness and time values for Q6 (simple and complex). The pareto front for the different complexities is drawn by  using a blue and red line respectively. The visualizations on the pareto front for Q6 - Simple is radar and ratio plot and for Q6 - Complex is the text plot.} 
+\caption[Pareto front for Q6]{The correctness and time values for Q6 (simple and complex). The Pareto front for the different complexities is drawn by  using a blue and red line respectively. The visualizations on the Pareto front for Q6 - Simple is the radar and the ratio plot and for Q6 - Complex is the text plot.} 
 \end{figure}
  
 \begin{mdframed} 
 \textbf{RQ3.2: How good can the visualizations be used to compare a high number of complex performance-influence models and a high number of terms?}
 \end{mdframed}
 
-\textbf{Q5:} From \hyperref[figure:paretoManyQ5]{Figure 4.5}, for the complex use case, we can see that if both time and correctness factors are considered text plot performs better than other visualization technique, with perfect correctness measurements.
+For this sub-question, we only consider the complex use case for Q5 and Q6.
 
-\textbf{Q6:} From \hyperref[figure:paretoManyQ6]{Figure 4.6}, for the complex use case, we can infer that text plot performs considerably better than ratio plot in terms of time measurements, and better than radar plot in terms of correctness measurements.
+\begin{description}[leftmargin=0pt]
+\item[Correctness: ] From \hyperref[table:correctness]{Table 4.1}, we can infer that for Q5, all the interviewees were able to answer the question correctly when presented with the text plot. However, for Q6, the ratio plot and the text plot performed equally good, even though both did not lead to perfect correctness results.
+
+\item[Time Measurements: ] From the results presented in \hyperref[table:time]{Table 4.2}, none of the visualization techniques performed significantly better in terms of time measurements.
+
+\item[Difficulty Ratings: ] From the difficulty ratings presented in \hyperref[table:rating]{Table 4.3}, we can infer that the ratio plot has higher difficulty ratings for Q5 and Q6.
+
+\end{description}
+
+\textbf{Q5:} From \hyperref[figure:paretoManyQ5]{Figure 4.5}, for the complex use case, we can see that if both time and correctness factors are considered the text plot performs better than other visualization technique, with perfect correctness measurements.
+
+\textbf{Q6:} From \hyperref[figure:paretoManyQ6]{Figure 4.6}, for the complex use case, we can infer that the text plot performs considerably better than the ratio plot in terms of time measurements, and better than the radar plot in terms of correctness measurements.
+
+Therefore, the answer to this research question is \textbf{yes}, with the text plot being the considerable choice of visualization technique when scalability with respect to performance-influence models is considered, since it has the best results when considering both time and correctness factors.
+
+And when scalability with respect to configuration options is considered, the ratio plot is the best visualization technique in general.
+
 
 \vskip 0.2in
 \begin{mdframed}
@@ -760,7 +790,7 @@ x          y         label
 For the above research question and its sub-questions, we use Mann-Whitney test results and box-plot visualizations. 
 
 \begin{description}[leftmargin=0pt]
-\item[Mann-Whitney U Test: ]For this test, we use the difficulty ratings for each visualization technique and for each use case. For instance, for Q5 and radar plot the inputs are the difficulty ratings of radar plot for simple use case and radar plot for complex use case of Q5.
+\item[Mann-Whitney U Test: ]For this test, we use the difficulty ratings for each visualization technique and for each use case. For instance, for Q5 and the radar plot, the inputs are the difficulty ratings of the radar plot for the simple use case and the radar plot for the complex use case of Q5.
 
 \begin{table}[!htbp]
 \centering
@@ -773,10 +803,10 @@ Q6   &   &  0.938 &  &   0.947 &  & 0.151  \\
 \bottomrule
 \end{tabular}
 \label{table:q5q6MannWhitney}
-\caption[Difficulty Rating]{Mann-Whitney U Test for the different visualization techniques and complexities for Q5 and Q6.} 
+\caption[Mann-Whitney U Test for evaluating RQ5]{Mann-Whitney U Test for the different visualization techniques and complexities for Q5 and Q6.} 
 \end{table}
 
-\item[Box Plots: ] The box plot have the co-ordinates time vs simple, complex use cases per visualization type. For instance, for radar plot, we calculate the average time taken per question, when presented with a radar plot with a simple use case and similarly for the complex use case.
+\item[Box Plots: ] The box plot has the coordinates time vs simple, complex use cases per visualization type. For instance, for the radar plot, we calculate the average time taken per question, when presented with the radar plot with a simple use case and similarly for the complex use case.
 
 \begin{minipage}[b]{0.5\textwidth}
 \centering
@@ -818,7 +848,7 @@ Q6   &   &  0.938 &  &   0.947 &  & 0.151  \\
     \end{axis}
 \end{tikzpicture}
 \label{scalabilityRadar}
-\captionof{figure}{Scalability of radar plot}
+\captionof{figure}{Scalability of the radar plot}
 \end{minipage}
 \begin{minipage}[b]{0.5\textwidth}
 \centering
@@ -857,7 +887,7 @@ Q6   &   &  0.938 &  &   0.947 &  & 0.151  \\
     \end{axis}
 \end{tikzpicture}
 \label{scalabilityText}
-\captionof{figure}{Scalability of text plot}
+\captionof{figure}{Scalability of the text plot}
 \end{minipage}
 \begin{center}
 \begin{tikzpicture}[scale=0.85] 
@@ -903,56 +933,212 @@ Q6   &   &  0.938 &  &   0.947 &  & 0.151  \\
     \end{axis}
 \end{tikzpicture}
 \label{scalabilityRatio}
-\captionof{figure}{Scalability of ratio plot}
+\captionof{figure}{Scalability of the ratio plot}
 \end{center}
+
+\begin{description}[leftmargin=0pt]
+\item[Radar Plot: ]From \hyperref[scalabilityRadar]{Figure 4.7}, We can infer that
+for a simple use case with the radar chart, an interviewee on an average took 63 seconds to answer the complex performance-influence model question. We can also notice that the distribution is normal, implying that 50\% of the values are below the median and 50\% of values are above the median. 
+
+Similarly, for a complex use case, an interviewee takes on an average of 31 seconds to answer the complex performance-influence model question. We can also see that most of the time measurements are relatively shorter than the time measurements for the simple use case.
+
+\item[Text Plot: ]From \hyperref[scalabilityText]{Figure 4.8}, We can infer that for a simple use case an interviewee takes approximately 40 seconds to answer the complex performance-influence model question regarding the text plot. 
+
+Similarly, for a complex use case, an interviewee took a minimum of 34 seconds to answer the question.
+
+\item[The ratio Plot: ]From \hyperref[scalabilityRatio]{Figure 4.9}, we can notice that for simple use, an interviewee on an average takes 67 seconds for the complex use case to answer the question. We can also notice that the distribution is normal, implying that 50\% of the values are below the median and 50\% of values are above the the the median. 
+
+Similarly, for the complex use case, an interviewee took on an average of 54 seconds to answer the question, with most of the time measurements being relatively shorter, with an exception of some outliers.
+\end{description}
+
+\begin{mdframed}
+\textbf{RQ4.1: What are the differences with respect to visualization techniques regarding many performance-influence models having a number of terms?}
+\end{mdframed}
+
+For this sub-question, we consider only Q5 since Q5 deals with scalability with respect to a number of terms.
 
 We will evaluate this research question with a hypothesis. The hypothesis we consider is as follows:
 
 \begin{mdframed}
-\textbf {Hypothesis: There are significant different among the visualization techniques considering many performance-influence models}
+\textbf {Hypothesis: There are significant differences among the visualization techniques considering many performance-influence models having a number of terms}
 \end{mdframed}
 
-\begin{description}[leftmargin=0pt]
-\item[Radar Plot: ]From \hyperref[scalabilityRadar]{Figure 4.7}, We can infer that
-for a simple use case with radar chart, an interviewee on an average took a 63 seconds to answer the complex performance-influence model question. We can also notice that the distribution is normal, implying that 50\% of the values are below median and 50\% of values are above median. 
-
-Similarly, for a complex use case, an interviewee takes on an average 31 seconds to answer the the complex performance-influence model question. We can also see that most of the time measurements are relatively shorter than the time measurements for simple use case.
-
-\item[Text Plot: ]From \hyperref[scalabilityText]{Figure 4.8}, We can infer that for a simple use case an interviewee takes approximately 40 seconds to answer a the complex performance-influence model question regarding text plot. 
-
-Similarly, for a complex use case, an interviewee took a minimum of 34 seconds to answer the question.
-
-\item[Ratio Plot: ]From \hyperref[scalabilityRatio]{Figure 4.9}, we can notice that for simple use, an interviewee on an average takes 67 seconds for complex use case to answer the question. We can also notice that the distribution is normal, implying that 50\% of the values are below median and 50\% of values are above median. 
-
-Similarly, for the complex use case, an interviewee took on an average a 54 seconds to answer the question, with most of the time measurements being relatively shorter, with an exception of some outliers.
-\end{description}
-
-From all the 3 box plots, we can infer on an average, a complex use case takes less amount of time than simple use case to answer a question regarding many performance-influence models, and hence the complex use case seems better in terms of time.
+From the Mann-Whitney U test in \hyperref[table:q5q6MannWhitney]{Table 4.5}, for Q5 we can infer that none of the visualization techniques have significant differences between the simple and the complex use case. Hence, we reject the hypothesis.
 
 \begin{mdframed}
-\textbf{RQ4.1: What are the differences with respect to visualization techniques regarding many performance-influence models having number of terms?}
+\textbf {Hypothesis: Rejected}
 \end{mdframed}
 
 \begin{mdframed}
-\textbf{RQ4.2: What are the differences with respect to visualization techniques regarding many performance-influence models having number of models?}
+\textbf{RQ4.2: What are the differences with respect to visualization techniques regarding many performance-influence models having a number of models?}
 \end{mdframed}
 
-From the Mann-Whitney U test in \hyperref[table:q5q6MannWhitney]{Table 4.5}, between the simple and complex use case for different visualization techniques does not present any significant values.
+For this sub-question, we consider only Q6 since Q6 deals with scalability with respect to a number of models.
+
+We will evaluate this research question with a hypothesis. The hypothesis we consider is as follows:
+
+\begin{mdframed}
+\textbf {Hypothesis: There are significant differences among the visualization techniques considering many performance-influence models having a number of models}
+\end{mdframed}
+
+From the Mann-Whitney U test in \hyperref[table:q5q6MannWhitney]{Table 4.5}, for Q6 we can infer that none of the visualization techniques have significant differences between the simple and the complex use case. Hence, we reject the hypothesis.
 
 \begin{mdframed}
 \textbf {Hypothesis: Rejected}
 \end{mdframed}
 \end{description}
 
-\section{Threats to Validity}
+From all the 3 box plots, we can infer on an average, a complex use case takes less amount of time than simple use case to answer a question regarding many performance-influence models, and hence the complex use case seems better in terms of time.
+
+In general, to answer this research question, there are no significant differences in the visualization techniques regarding many performance-influence models.
+
+
+\section{Discussion}
 \label{sec:4.5}
-In this section, we present different factors that could affect the validity of the results. There can be several factors which influence the interviewee in a way that might lead to incorrect conclusions. These factors are divided into internal threats and external threats.
+In this section we discuss more on our findings from the presented results. 
 
-The perception of the interviewees is one of the internal threats to validity that biases the time measurements. It occurs when the interviewee re-reads the question which results in additional time that is not needed to answer the question, but to understand the question itself. A probable solution to this issue could that the interviewer presents an example for every new question that appears, so that the interviewee understands the question well in advance. 
+\subsection*{One Performance-Influence Model}
+\vskip 0.2in
+\begin{mdframed}
+\textbf{RQ1: Can we use the visualization techniques to identify relevant configuration options or interactions  of one performance-influence model?}
+\end{mdframed}
 
-Another internal threat can be the expectation the interviewer has with the interviewees, since there is no community, all the questions are selected in a way what a normal user of the tool would ask. A possible solution used in this interview is to get feedback on the questions asked in the interview, to know if they were meaningful and if the interviewee had any new questions or use cases.
+To evaluate this research question, we used the time measurements, relative correctness values and the difficulty ratings for Q1 and Q2.
 
-The third internal threat is when an interviewee is answering a question with regard to ratio plot visualization. The interviewee at some point will conclude that the ratio plot is time consuming than the radar and text plot, or he will conclude that the said question can be answered easily with the help of radar plot or text plot and he totally gives up on ratio plot, which affects the time measurement part of our evaluation in a negative way. To resolve this issue, we use the difficulty ratings. 
+\vskip 0.2in
+\begin{mdframed}
+\textbf{RQ1.1: Can we use the visualization techniques to identify relevant configuration options or interactions  of one simple performance-influence model?}
+\end{mdframed}
+
+For this sub-question, we considered the simple use case of Q1 and Q2.
+
+Taking into consideration all the 3 factors; time measurements, correctness, and difficulty ratings the text plot performs considerably better than the radar plot and the ratio plot.
+
+The text plot is better at finding the most relevant configuration option or interaction because it visualizes the data in a vertically aligned format, which means all the configuration options and interactions are visualized one below the other. Hence, the interviewee's perception is better towards the text plot and therefore, towards the vertically aligned format. 
+
+The ratio plot performs the worst and this can be seen in  \hyperref[table:rating]{Table 4.3}, where the average difficulty ratings are the the highest. For Q2, simple use case we see that the average difficulty rating for ratio plot is 4.2 with a standard deviation of 1.03, which corresponds to \hyperref[table:time]{Table 4.2}, where the ratio plot is significantly worse than the radar plot. This is due to the fact that Q2 was impossible to answer with the ratio plot. However, some interviewees got a different perception and they gave a lower difficulty rating and hence, the higher deviation from the mean. 
+
+From the \hyperref[table:pearons]{Table 4.4}, we see that there is no strong correlation for any visualization technique. This could be due to the fact that the interviewees are looking at the visualizations for the first time and hence, their perception towards difficulty rating and time measurements do not match.
+
+A closer look at the Pareto front plot in \hyperref[figure:paretoOneQ1]{Figure 4.1} and \hyperref[figure:paretoOneQ2]{Figure 4.2}, reveal that even though the ratio plot took on an average higher time than other visualization techniques, it did not lead to perfect correctness answers. The radar plot visualizes the data in the form of bars, which does not aid the interviewee's perception when finding out the most relevant configuration option or interaction. 
+
+\vskip 0.2in
+\begin{mdframed}
+\textbf{RQ1.2: Can we use the visualization techniques to identify relevant configuration options or interactions  of one complex performance-influence model?}
+\end{mdframed}
+
+For this sub-question, we considered the complex use case of Q1 and Q2.
+
+Considering all the 3 factors; time measurements, correctness and the difficulty ratings, again the text plot outperforms the other visualization techniques. The reasoning behind this is the same as given in the previous research question. Whereas, the ratio plot again proves to be the unfavorable choice of visualization technique. Since Q2, the simple use case was impossible to answer with the ratio plot, we excluded the ratio plot from the complex use case.
+
+\subsection*{Two Performance-Influence Models}
+\vskip 0.2in
+\begin{mdframed}
+\textbf{RQ2: Can we use the visualization to compare two performance-influence models?}
+\end{mdframed}
+
+To evaluate this research question, we used the time measurements, relative correctness values and the difficulty ratings for Q3 and Q4.
+
+\vskip 0.2in
+\begin{mdframed}
+\textbf{RQ2.1: Can we use the visualization to compare two simple performance-influence models?}
+\end{mdframed}
+
+For this sub-question, we considered the simple use case of Q3 and Q4.
+
+Taking into consideration all the 3 factors; time measurements, correctness, and difficulty ratings the text plot performs the best than the radar plot and the ratio plot. This is because comparing two performance-influence models in a vertically aligned format is much easier than in radial format or in the form of bars as in the ratio plot.
+
+From \hyperref[table:pearons]{Table 4.4}, we can that the only strong correlation between time measurements and the difficulty rating is for Q3, the radar plot. 
+
+From \hyperref[table:correctness]{Table 4.1}, we can see that the ratio plot leads to perfect correctness answers to Q3. However, from  \hyperref[table:time]{Table 4.2}, we can see that the ratio plot is significantly worse than the radar plot in terms of time measurements. And from the \hyperref[table:rating]{Table 4.3}, we see that the ratio plot has consistently an average difficulty rating of 3 and above. 
+
+From \hyperref[figure:paretoTwoQ3]{Figure 4.3} and \hyperref[figure:paretoTwoQ4]{Figure 4.4}, we can see that the ratio plot are always on the top of the plot, which implies that they took relatively higher time than other visualization techniques.
+
+Comparing performance-influence models in the ratio plot is difficult since the configuration options and the interactions are not in the same order for all the performance-influence models. This requires the user to find the corresponding configuration option or interactions to make a comparison, which influences the time measurements and the difficulty rating negatively.
+
+\vskip 0.2in
+\begin{mdframed}
+\textbf{RQ2.2: Can we use the visualization to compare two complex performance-influence models?}
+\end{mdframed}
+
+For this sub-question, we considered the complex use case of Q3 and Q4.
+
+We notice it again that the text plot is better than the ratio plot or the radar plot. \hyperref[table:rating]{Table 4.3}, reflect the difficulty levels of the 3 visualization techniques. This implies that the ratio plot is most difficult, the radar plot is moderately difficult and the text plot being the easiest one. The reason being that two performance-influence models are easier and faster to compare when they are visualized side-by-side as in the text plot. When they are visualized in the ratio plot, the same configuration option or interaction is not plotted side-by-side, their order differs based on their general performance. Hence, a comparison of the text plot is easier than on the ratio plot. 
+
+The radar plot does moderately good at the comparison since data is plotted in a circle than in vertically aligned format.
+
+The text plot is better since the comparison of performances in a vertically aligned format is much easier and faster than on the radar and the ratio plots.
+
+
+From \hyperref[figure:paretoTwoQ3]{Figure 4.3} and \hyperref[figure:paretoTwoQ4]{Figure 4.4}, we can see that the ratio plot are always on the top of the plot, which implies that they took relatively higher time than other visualization techniques.
+
+\subsection*{Many Performance-Influence Models}
+
+\vskip 0.2in
+\begin{mdframed}
+\textbf{RQ3: How good can the visualizations be used to compare a high number of performance-influence models and a high number of terms?}
+\end{mdframed}
+
+To evaluate this research question, we used the time measurements, relative correctness values and the difficulty ratings for Q5 and Q6.
+
+Q5 is with respect to many performance-influence models with a high number of terms and Q6 is with respect to many performance-influence models with a high number of models.
+
+\begin{mdframed} 
+\textbf{RQ3.1: How good can the visualizations be used to compare a high number of simple performance-influence models and a high number of terms?}
+\end{mdframed}
+
+For this sub-question, we considered the simple use case of Q5 and Q6.
+
+For scalability with a high number of terms and considering all the 3 factors; time measurements, correctness, and the difficulty rating, we can infer that the text plot is a better choice of visualization. However, for scalability with a high number of models, we can infer that the ratio plot is a better choice of visualization. This is due to the fact that comparing a higher number of configuration options and interactions is easier on a vertically aligned format.
+
+From \hyperref[table:rating]{Table 4.3}, for Q6 we can notice that the ratio plot has consistently higher difficulty ratings, and  \hyperref[table:correctness]{Table 4.1}, tells us otherwise. This implies that even though the interviewees took a long time for the ratio plot, it leads to the comparatively higher correct answer than the radar plot or the text plot which took a lower time. This is because, comparing many performance-influence models, which have a lesser number of terms is easier to be compared in the form of bars as in the ratio plot.
+
+
+\begin{mdframed} 
+\textbf{RQ3.2: How good can the visualizations be used to compare a high number of complex performance-influence models and a high number of terms?}
+\end{mdframed}
+
+For this sub-question, we considered the complex use case of Q5 and Q6.
+
+For the complex use case, we find the same conclusion as that of a simple use case. I.e., the text plot is better at comparing the higher number of terms and the ratio plot is better at comparing the higher number of performance-influence models, but with a lesser number of terms. 
+
+We already know that for comparing several performance-influence models, the text plot is the best choice of visualization, since data is easier and also faster to perceive when displayed in a vertically aligned format.
+
+For comparing many configuration options among several performance-influence models, the ratio plot proved to be better than text and the radar plot. The reason can be that when many terms are introduced, the visualization for the radar and text can get quite complex and hard to read and compare. Whereas, for the ratio plot the bars are spread out, helping the user to do comparisons. The comparisons using the ratio plot can be time consuming, but they lead to the the highest correct answers than the other two visualizations.
+
+\vskip 0.2in
+\begin{mdframed}
+\textbf {RQ4: What are the differences with respect to visualization techniques regarding many performance-influence models?}
+\end{mdframed}
+
+For this research question, we introduced a hypothesis which considered that there are significant differences between the visualization techniques with many performance-influence models.
+
+\begin{mdframed}
+\textbf{RQ4.1: What are the differences with respect to visualization techniques regarding many performance-influence models having a number of terms?}
+\end{mdframed}
+
+From \hyperref[table:q5q6MannWhitney]{Table 4.5}, we see that there are no significant values for Q5. 
+
+Also, the box plots, do not show significant differences among the visualization techniques. The reason can be that the interviewee's perception almost similar for both the simple and the complex use case and for all the visualization techniques.
+
+
+\begin{mdframed}
+\textbf{RQ4.2: What are the differences with respect to visualization techniques regarding many performance-influence models having a number of models?}
+\end{mdframed}
+
+From \hyperref[table:q5q6MannWhitney]{Table 4.5}, we see that there are no significant values for Q6. 
+
+The hypothesis is rejected for the same reason as given in RQ4.1.
+
+\section{Threats to Validity}
+\label{sec:4.6}
+In this section, we present different factors that could affect the validity of the results. There can be several factors that influence the interviewee in a way that might lead to incorrect conclusions. These factors are divided into internal threats and external threats.
+
+The perception of the interviewees is one of the internal threats to validity that biases the time measurements. It occurs when the interviewee re-reads the question which results in additional time that is not needed to answer the question, but to understand the question itself. A probable solution to this issue could that the interviewer presents an example for every new question that appears so that the interviewee understands the question well in advance. 
+
+Another internal threat can be the expectation the interviewer has with the interviewees, since there is no community, all the questions are selected in a way that a normal user of the tool would ask. A possible solution used in this interview is to get feedback on the questions asked in the interview, to know if they were meaningful and if the interviewee had any new questions or use cases.
+
+The third internal threat is when an interviewee is answering a question with regard to the ratio plot visualization. The interviewee at some point will conclude that the ratio plot is time consuming than the radar and the text plot, or he will conclude that the said question can be answered easily with the help of radar plot or the text plot and he totally gives up on the ratio plot, which affects the time measurement part of our evaluation in a negative way. To resolve this issue, we use the difficulty ratings. 
 
 The time measurement which does not match our assumption with respect to the difficulty rating could be another internal threat. For instance, if the time taken by a certain visualization is very low, we assume that this visualization technique is easier to answer, but the corresponding difficulty rating could be high indicating that the interviewee blindly tried to answer the question.
 
@@ -961,31 +1147,31 @@ The setup of our study could be another possible internal threat. Since we kept 
 One of the external threats is with regard to the community. The interview is conducted without any community behind it and hence, we cannot really generalize it. However, we tried to avoid this threat by asking the interviewees whether they could imagine other useful use cases.
 
 \section{General Feedback}
-\label{sec:4.6}
+\label{sec:4.7}
 
-The visualizations presented in this thesis can still be enhanced with additional functionalities that will help the user of the tool to improve their perception. Therefore, we have asked our interviewees for possible feedback. The feedback is categorized as below, in an order where a functionality with higher number of requests are at the top of the list.
+The visualizations presented in this thesis can still be enhanced with additional functionalities that will help the user of the tool to improve their perception. Therefore, we have asked our interviewees for possible feedback. The feedback is categorized as below, in an order where a functionality with a higher number of requests is at the top of the list.
 
 \begin{itemize}
 
- \item \textbf{Ratio plot with positive and negative influences:} 33\% of interviewees suggested that ratio plot to be shown with positive and negative influences.The current ratio plot displays only the performance in general, and it would not help in answering the question if a positive or negative influence has to be identified. Hence the suggestion was that we have an axis in the middle, and then all the configuration options which give a positive effect are to be placed on the top of the axis and all the configuration options which give a negative effect be placed below the axis.
+ \item \textbf{The ratio plot with positive and negative influences:} 33\% of interviewees suggested that the ratio plot be shown with positive and negative influences. The current ratio plot displays only the performance in general, and it would not help in answering the question if a positive or negative influence has to be identified. Hence the suggestion was that we have an axis in the middle, and then all the configuration options which give a positive effect are to be placed on the top of the axis and all the configuration options which give a negative effect be placed below the axis.
  
- \item\textbf{Ratio plot without sorting functionality} : 33\% of interviewees mentioned that questions regarding ratio plot needed them to compare each bar with the same in all other groups, and since the bars in each group were sorted according to their relevance it was difficult for them to find the corresponding bar in other groups. Hence, the suggestion was to remove the sorting functionality to let the bars appear in the same order in all the groups, which is very easy to compare.
+ \item\textbf{The ratio plot without sorting functionality} : 33\% of interviewees mentioned that questions regarding the ratio plot needed them to compare each bar with the same in all other groups, and since the bars in each group were sorted according to their relevance it was difficult for them to find the corresponding bar in other groups. Hence, the suggestion was to remove the sorting functionality to let the bars appear in the same order in all the groups, which is very easy to compare.
  
- \item \textbf{Sorting Feature:} 33\% of the interviewees suggested that the configuration options/interactions in radar plot and text plot be displayed in a sorted order according to their relevance, which would then help to find the most relevant option easily.
+ \item \textbf{Sorting Feature:} 33\% of the interviewees suggested that the configuration options/interactions in the radar plot and the text plot be displayed in a sorted order according to their relevance, which would then help to find the most relevant option easily.
  
-\item \textbf{Ratio plot bars with contrasting colors:} Sometimes the adjacent bars in ratio plot had colors that led to misunderstandings. Hence the feedback was to have adjacent bars with contrasting colors so that they do not look similar and can be identified easily. 22\% of interviewees had this suggestion for the ratio plot.
+\item \textbf{The ratio plot bars with contrasting colors:} Sometimes the adjacent bars in the ratio plot had colors that led to misunderstandings. Hence the feedback was to have adjacent bars with contrasting colors so that they do not look similar and can be identified easily. 22\% of interviewees had this suggestion for the ratio plot.
  
-\item \textbf{Filter functionality:} 22\% of the Interviewees suggested to have a filter functionality on top of each visualization, where certain configuration options are filtered out whose difference falls beyond a certain selected threshold from the filter. By doing this a potential user of the tool can eliminate configuration options from the visualization that he is not interested in.
+\item \textbf{Filter functionality:} 22\% of the Interviewees suggested having a filter functionality on top of each visualization, where certain configuration options are filtered out whose difference falls beyond a certain selected threshold from the filter. By doing this a potential user of the tool can eliminate configuration options from the visualization that he is not interested in.
 
-\item \textbf{Consistent Visualizations: } 22\% of the interviewees were confused whether the markup on hover of data points showed group name or a configuration option name. This can be avoided by having a consistent way of representing group names and configuration option names across all three visualizations. 
+\item \textbf{Consistent Visualizations: } 22\% of the interviewees were confused whether the markup on hover of data points showed a group name or a configuration option name. This can be avoided by having a consistent way of representing group names and configuration option names across all three visualizations. 
 
-\item \textbf{Invert red and green colors:} 11\% of interviewees were confused as to why positive performance influences were marked in red, whereas negative performance influences were marked in green. They suggested to mark green for positive influence and vice versa, which would be a easy visual aid in knowing positive or negative influence.
+\item \textbf{Invert red and green colors:} 11\% of interviewees were confused as to why positive performance influences were marked in red, whereas negative performance influences were marked in green. They suggested marking green for positive influence and vice versa, which would be an easy visual aid in knowing positive or negative influence.
    
-\item \textbf{Provide markup} : 11\% Interviewees gave feedback on making data points stand out easily if the performance they contribute is either 0 or 1. Probably by using a different marker symbol in the visualization to show if the performance is 0 or 1. If the performance of a configuration option is 0 it is shown by a empty white marker symbol.
+\item \textbf{Provide markup} : 11\% Interviewees gave feedback on making data points stand out easily if the performance they contribute is either 0 or 1. Probably by using a different marker symbol in the visualization to show if the performance is 0 or 1. If the performance of a configuration option is 0 it is shown by an empty white marker symbol.
 
-\item \textbf{Select 2 data point to show their difference} : 11\% of interviewees suggested that for radar plot and text plot, there should be a functionality where in the user can select 2 data points and potentially know the difference between them.This suggested holds for more than one performance-influence models.
+\item \textbf{Select 2 data point to show their difference} : 11\% of interviewees suggested that for the radar plot and the text plot, there should be a functionality wherein the user can select 2 data points and potentially know the difference between them. This suggested holds for more than one performance-influence model.
 
-\item \textbf{Ratio plot - sort only one group by relevance :} 11\% of interviewees wanted the visualization of ratio plot in slightly different way. Their suggested was to display only one of the groups example:Group A, in sorted order, and all groups to follow the order of Group A. This would help in comparing the bar without having to look in the corresponding groups. This applies to visualizations with more than one performance-influence models.
+\item \textbf{The ratio plot - sort only one group by relevance :} 11\% of interviewees wanted the visualization of the ratio plot in a slightly different way. Their suggested was to display only one of the group's example:Group A, in sorted order, and all groups to follow the order of Group A. This would help in comparing the bar without having to look in the corresponding groups. This applies to visualizations with more than one performance-influence model.
 
 \end{itemize}
 

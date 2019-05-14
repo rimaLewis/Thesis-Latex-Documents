@@ -1,7 +1,59 @@
 \ifgerman{\chapter{Anhang}}{\chapter{Appendix}}
 \label{appedixa}
 
-\section{Difficulty Rating vs Time measurements co-relation}
+
+\section{Folder Structure of the CD}
+\label{folderStructure}
+In this thesis, we introduced and presented 3 different visualization techniques that aids developers and analysts to interpret complex performance-influence models. 
+
+\begin{figure}[ht]
+    \centering
+    \begin{forest}
+  for tree={
+    font=\ttfamily,
+    grow'=0,
+    child anchor=west,
+    parent anchor=south,
+    anchor=west,
+    calign=first,
+    inner xsep=7pt,
+    edge path={
+      \noexpand\path [draw, \forestoption{edge}]
+      (!u.south west) +(7.5pt,0) |- (.child anchor) pic {folder} \forestoption{edge label};
+    },
+    before typesetting nodes={
+      if n=1
+        {insert before={[,phantom]}}
+        {}
+    },
+    fit=band,
+    before computing xy={l=15pt},
+  }  
+[CD
+  [thesis.pdf
+  ]
+  [Performance-Influence-Model-Tool
+    [Tool
+    ]
+    [ReadMe
+    ]
+  ]
+  [Questionnaire
+  ]
+]
+\end{forest}
+    \caption{Directory listing of the contents of the CD}
+    \label{fig:my_label}
+\end{figure}
+
+\begin{itemize}[leftmargin=*]
+  \item[] \textbf{thesis.pdf :} Contains the thesis in PDF format.
+  \item[] \textbf{Performance-Influence-Model-Tool :} This folder contains the 'Visualization of Performance-Influence Model' tool. It is is written in javascript and angularJs framework. It also contains a ReadMe file to aid the reader to setup the tool.
+  \item[] \textbf{Questionnaire :} Contains the questionnaire used for the interview in PDF format.
+\end{itemize}
+
+
+\section{Difficulty Rating vs Time measurements correlation}
 \label{sanityCheck}
 Sanity check is made to ensure that the assumption made from the results of difficulty rating hold true. To conduct the sanity check, we plot graphs with difficulty rating against time taken to answer a question, per interviewee.
 
@@ -1247,7 +1299,6 @@ x         y         label
 \label{figure:interviewee9}
 \caption[Difficulty rating and time measurements for interviewee 9]{Difficulty rating and time measurements for interviewee 9} 
 \end{figure}
-
 
 \section{Questionnaire}
 \label{appendix:questionnaire}

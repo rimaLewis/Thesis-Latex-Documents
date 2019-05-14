@@ -16,10 +16,10 @@
 %- Wie will ich diese Ziele erreichen?
 %- Was habe ich im Einzelnen vor? 
 
-Modern software systems provide a multitude of configuration options. Configuration options define the functionality of a configurable software system. These configuration options and their interactions often have an influence on the non-functional properties of the system, such as performance or energy consumption. To identify the performance influence of certain functional properties on the non-functional properties of the system, we use performance-influence models \cite{DBLP:conf/sigsoft/SiegmundGAK15}. 
-Users or developers need to analyze them in order to find the relevant configuration option or interaction or to compare the influences of two different non-functional properties on the configurable software system. This helps to configure the software in a way that affects the performance positively. The performance-influence models in their original format can get quite complex when the set of configuration options and interactions increase. The increasing complexity of performance-influence models makes analyzing them a difficult task. The solution we use in our thesis is to present a visual representation of performance-influence models.
+Modern software systems provide a multitude of configuration options. Configuration options define the functionality of a configurable software system. Configuration options and their interactions often have an influence on the non-functional properties of the system, such as performance or energy consumption. To identify the performance influence of certain configuration options or interactions on the non-functional properties of the system, we use performance-influence models \cite{DBLP:conf/sigsoft/SiegmundGAK15}. 
+Users or developers need to analyze performance-influence models in order to find the relevant configuration option or interaction of the configurable software system. Performance-influence models can also be used to compare the influences of two different non-functional properties on the configurable software system. This aids to configure the software in a way that affects its performance positively. The performance-influence models can become quite complex as the set of configuration options and interactions that influence performance increases. The increasing complexity of performance-influence models makes analyzing them a difficult task. The solution we use in our thesis is to present 3 different visual representations of performance-influence models.
 
-We present 3 different visualization techniques to analyze performance-influence models. They are radar plot, text plot and ratio plot. Radar and text plot, present the actual performance of the configuration option or interaction, whereas the ratio plot presents the relative performance of the configuration option or interaction with respect to the total performance of the system. To assess the quality of these visualization techniques, we perform an interview. The interview consists of questions with a combination of performance-influence models with different levels of complexity and different visualization techniques. The results from the interview help us to evaluate our research questions. We have selected the following research questions to evaluate our thesis.
+We present 3 different visualization techniques to analyze performance-influence models, (1) the radar plot,  (2) the text plot, and (3) the ratio plot. The Radar and the text plot, present the actual performance of the configuration option or interaction, whereas the ratio plot presents the relative performance of the configuration option or interaction with respect to the total performance of the system. To assess the quality of these visualization techniques, we perform an interview. The interview consists of questions with a combination of performance-influence models with different levels of complexity and different visualization techniques. The results from the interview aid us to evaluate our research questions. We have selected the following research questions to evaluate our thesis.
 
 \textbf{RQ1:} Can we use the visualization techniques to identify the relevant properties of one performance-influence model?
 
@@ -27,23 +27,23 @@ We present 3 different visualization techniques to analyze performance-influence
 
 \textbf{RQ3:} How good can the visualizations be used to compare a high number of performance-influence models and a high number of terms?
 
-\textbf{RQ4:} What are the differences regarding many performance-influence models?
+\textbf{RQ4:} What are the differences when considering the scalability of many performance-influence models?
 
 The research questions mentioned above are evaluated for different complexity levels of performance-influence models.
 
 The structure of this thesis is as follows:
 
-In \hyperref[background]{Chapter 2}, we introduce terms used throughout the thesis for the better understanding of the reader. We explain configurable software systems and its non-functional properties, performance-influence models and how we derive them. We also introduce the visualization techniques.
+In \hyperref[background]{Chapter 2}, we introduce terms used throughout the thesis for a better understanding of the reader. We explain configurable software systems and its non-functional properties, performance-influence models and how we derive them. We also introduce different visualization techniques.
 
-In \hyperref[methodology]{Chapter 3}, we introduce the research questions that are selected to validate this thesis. We introduce the interview process and how it is designed to help us evaluate the research questions. 
+We present the research questions selected to validate this thesis in \hyperref[methodology]{Chapter 3}. We introduce the process of the interview and how it is designed to help us assess the research questions.
 
 The answers obtained in the interview are presented and discussed in \hyperref[evaluation]{Chapter 4}. We discuss our findings from the presented results and answer our research questions.
 
-In \hyperref[relatedwork]{Chapter 5}, is concerned with the work that is related to visualization of performance-influence models.
+The work related to the visualization of performance-influence models is discussed in \hyperref[relatedwork]{Chapter 5}.
 
 In \hyperref[conclusion]{Chapter 6}, we present the conclusion of our thesis and a summary of our findings with respect to the research questions.
 
-In \hyperref[futurework]{Chapter 7}, we present further improvements for the visualizations of the performance-influence models tool based on the general feedback given by the interviewees in the interview process.
+We present further improvements for the visualizations of the performance-influence models tool in \hyperref[futurework]{Chapter 7}. The improvements are based on the general feedback given by the interviewees in the interview process.
 
 
 
